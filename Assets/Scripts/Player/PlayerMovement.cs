@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerMovementController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField]
-	private float movementSpeed = 5f;
+	private float movementSpeed = 5f;		// Player movement speed
 
 	[System.NonSerialized]
-	public Directions playerFacing;
+	public Directions playerFacing;			// Represents the current player facing direction
 
-	private Rigidbody2D playerRigidbody;
-	private Vector2 movementVector;
+	private Rigidbody2D playerRigidbody;	// Player rigidbody component
+	private Vector2 movementVector;			// Player movement vector
 
-	private static Vector2 characterScale;
+	private static Vector2 characterScale;	// Character default scale
 
 	public enum Directions
 	{
