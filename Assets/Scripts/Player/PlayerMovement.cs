@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField]
 	private float movementSpeed = 5f;		// Player movement speed
 
+
 	[System.NonSerialized]
 	public Directions playerFacing;			// Represents the current player facing direction
 
 	private Rigidbody2D playerRigidbody;	// Player rigidbody component
+	private Animator animatorComponent;		// Player animator component
 	private Vector2 movementVector;			// Player movement vector
 
 	private static Vector2 characterScale;	// Character default scale
@@ -31,6 +33,9 @@ public class PlayerMovement : MonoBehaviour
 	{
 		// Get player rigidbody component
 		playerRigidbody = GetComponent<Rigidbody2D>();
+
+		// Get player animator component
+		animatorComponent = GetComponent<Animator>();
 
 		// Get characher scale
 		characterScale = transform.localScale;
@@ -71,6 +76,8 @@ public class PlayerMovement : MonoBehaviour
 			  ○ If (x=1; y=1)	- North_East	|	↗
 		*/
 
+		animatorComponent.SetBool("IsRunning", true);
+
 		switch (movementVector.x)
 		{
 			case -1:
@@ -82,7 +89,11 @@ public class PlayerMovement : MonoBehaviour
 				transform.localScale = new Vector2(characterScale.x * -1, transform.localScale.y);  ;
 				break;
 			case 0:
-				if (movementVector.y == 0)	break;
+				if (movementVector.y == 0)
+				{
+					animatorComponent.SetBool("IsRunning", false);
+				}
+
 				playerFacing = movementVector.y > 0 ? Directions.NORTH : playerFacing = Directions.SOUTH;
 				break;
 			case 1:
