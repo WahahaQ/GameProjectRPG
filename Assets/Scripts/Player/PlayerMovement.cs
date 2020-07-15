@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField]
 	private float movementSpeed = 5f;		// Player movement speed
 
-
 	[System.NonSerialized]
 	public Directions playerFacing;			// Represents the current player facing direction
 
@@ -37,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 		// Get player animator component
 		animatorComponent = GetComponent<Animator>();
 
-		// Get characher scale
+		// Get the character scale
 		characterScale = transform.localScale;
 	}
 
@@ -54,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		// Move player to certain position
+		// Move the player to a certain position
 		playerRigidbody.MovePosition(playerRigidbody.position + movementVector * movementSpeed * Time.fixedDeltaTime);
 	}
 
@@ -64,16 +63,16 @@ public class PlayerMovement : MonoBehaviour
 			This method handles incoming player input
 			
 			Directions:
-			  ○ If (x=-1; y=-1)	- South_West	|	↙
+			  ○ If (x=-1; y=-1)	- South West	|	↙
 			  ○ If (x=-1; y=0)	- West			|	←
 			  ○ If (x=-1; y=1)	- North West	|	↖
 
 			  ○ If (x=0; y=-1)	- South			|	↓
 			  ○ If (x=0; y=1)	- North			|	↑
 
-			  ○ If (x=1; y=-1)	- South_East	|	↘
+			  ○ If (x=1; y=-1)	- South East	|	↘
 			  ○ If (x=1; y=0)	- East			|	→
-			  ○ If (x=1; y=1)	- North_East	|	↗
+			  ○ If (x=1; y=1)	- North East	|	↗
 		*/
 
 		animatorComponent.SetBool("IsRunning", true);
