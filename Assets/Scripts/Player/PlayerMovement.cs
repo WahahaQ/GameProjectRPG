@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField]
@@ -9,11 +9,13 @@ public class PlayerMovement : MonoBehaviour
 	[System.NonSerialized]
 	public Directions playerFacing;			// Represents the current player facing direction
 
+	private SpriteRenderer spriteRenderer;	// Player sprite renderer component
 	private Rigidbody2D playerRigidbody;	// Player rigidbody component
 	private Animator animatorComponent;		// Player animator component
 	private Vector2 movementVector;			// Player movement vector
 
-	private static Vector2 characterScale;	// Character default scale
+	private static Vector2 characterScale;  // Character default scale
+	
 
 	public enum Directions
 	{
@@ -36,11 +38,14 @@ public class PlayerMovement : MonoBehaviour
 		// Get player animator component
 		animatorComponent = GetComponent<Animator>();
 
+		// Get player sprite renderer component
+		spriteRenderer = GetComponent<SpriteRenderer>();
+
 		// Get the character scale
 		characterScale = transform.localScale;
 	}
 
-	void Update()
+	private void Update()
 	{
 		// Input
 		movementVector.x = Input.GetAxisRaw(GameConstants.AXIS_HORIZONTAL);
@@ -51,13 +56,13 @@ public class PlayerMovement : MonoBehaviour
 		movementVector = movementVector.normalized;
 	}
 
-	void FixedUpdate()
+	private void FixedUpdate()
 	{
 		// Move the player to a certain position
 		playerRigidbody.MovePosition(playerRigidbody.position + movementVector * movementSpeed * Time.fixedDeltaTime);
 	}
 
-	void UpdatePlayerDirection(Vector2 movementVector)
+	private void UpdatePlayerDirection(Vector2 movementVector)
 	{
 		/* 
 			This method handles incoming player input
@@ -83,9 +88,10 @@ public class PlayerMovement : MonoBehaviour
 				playerFacing =
 					movementVector.y == 0 ? Directions.WEST :
 					movementVector.y > 0 ? Directions.NORTH_WEST : Directions.SOUTH_WEST;
-				
+
 				// Flip the character
-				transform.localScale = new Vector2(characterScale.x * -1, transform.localScale.y);  ;
+				spriteRenderer.flipX = true;
+				//transform.localScale = new Vector2(characterScale.x * -1, transform.localScale.y);  ;
 				break;
 			case 0:
 				if (movementVector.y == 0)
@@ -101,7 +107,8 @@ public class PlayerMovement : MonoBehaviour
 					movementVector.y > 0 ? Directions.NORTH_EAST : Directions.SOUTH_EAST;
 
 				// Flip the character
-				transform.localScale = new Vector2(characterScale.x, transform.localScale.y); ;
+				spriteRenderer.flipX = false;
+				//transform.localScale = new Vector2(characterScale.x, transform.localScale.y); ;
 				break;
 		}
 	}
