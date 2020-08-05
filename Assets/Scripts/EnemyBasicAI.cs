@@ -9,7 +9,7 @@ public class EnemyBasicAI : MonoBehaviour
 	public float movementSpeed;
 	public float attackRate, attackRange;
 	public float projectileSpeed;
-	
+
 #pragma warning disable 0649
 
 	[SerializeField]

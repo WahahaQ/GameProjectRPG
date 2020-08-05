@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game : MonoBehaviour 
+public class Game : MonoBehaviour
 {
 	public List<Wave> waves = new List<Wave>();
 	public List<GameObject> curEnemies = new List<GameObject>();
@@ -30,45 +30,22 @@ public class Game : MonoBehaviour
 	public HealthController playerHealthController;
 	public ShootingBehaviour playerShootingBehaviour;
 
-	void Awake ()
+	private void Awake()
 	{
 		game = this;
 	}
 
-	void Start ()
+	private void Start()
 	{
 		StartCoroutine(StartGameTimer());
 	}
 
-	//Called at the start of the gmae to count down on screen.
-	IEnumerator StartGameTimer ()
-	{
-		ui.startText.gameObject.SetActive(true);
-		yield return new WaitForSeconds(1);
-		ui.startText.text = "BEGINS IN\n<size=150>4</size>"; ui.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
-		Game.game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
-		yield return new WaitForSeconds(1);
-		ui.startText.text = "BEGINS IN\n<size=150>3</size>"; ui.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
-		Game.game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
-		yield return new WaitForSeconds(1);
-		ui.startText.text = "BEGINS IN\n<size=150>2</size>"; ui.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
-		Game.game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
-		yield return new WaitForSeconds(1);
-		ui.startText.text = "BEGINS IN\n<size=150>1</size>"; ui.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
-		Game.game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
-		yield return new WaitForSeconds(1);
-		ui.startText.gameObject.SetActive(false);
-		Camera.main.orthographicSize = 7;
-
-		NextWave();
-	}
-
-	void Update ()
+	private void Update()
 	{
 		//If the wave is currently going but there are no enemies, then end the wave.
-		if(waveActive)
+		if (waveActive)
 		{
-			if(curEnemies.Count == 0)
+			if (curEnemies.Count == 0)
 			{
 				waveActive = false;
 				StartCoroutine(WaveEndTimer());
@@ -76,16 +53,16 @@ public class Game : MonoBehaviour
 		}
 
 		//If the player can upgrade, then allow the required keyboard inputs.
-		if(canUpgrade)
+		if (canUpgrade)
 		{
-			if(Input.GetKeyDown(KeyCode.Q))
+			if (Input.GetKeyDown(KeyCode.Q))
 			{
 				playerShootingBehaviour.damage += 5;
 				canUpgrade = false;
 				ui.upgradeText.gameObject.SetActive(false);
 				Game.game.Shake(0.15f, 0.15f, 30.0f);
 			}
-			if(Input.GetKeyDown(KeyCode.E))
+			if (Input.GetKeyDown(KeyCode.E))
 			{
 				playerShootingBehaviour.attackRate = 0.05f;
 				canUpgrade = false;
@@ -95,13 +72,57 @@ public class Game : MonoBehaviour
 		}
 
 		//If the player presses ESCAPE, quit the game.
-		if(Input.GetKeyDown(KeyCode.Escape)){
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
 			Application.Quit();
 		}
 	}
 
+	//Called at the start of the gmae to count down on screen.
+	private IEnumerator StartGameTimer()
+	{
+		ui.startText.gameObject.SetActive(true);
+		yield return new WaitForSeconds(1);
+		ui.startText.text = "BEGINS IN\n<size=150>4</size>"; ui.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
+		game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
+		yield return new WaitForSeconds(1);
+		ui.startText.text = "BEGINS IN\n<size=150>3</size>"; ui.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
+		game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
+		yield return new WaitForSeconds(1);
+		ui.startText.text = "BEGINS IN\n<size=150>2</size>"; ui.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
+		game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
+		yield return new WaitForSeconds(1);
+		ui.startText.text = "BEGINS IN\n<size=150>1</size>"; ui.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
+		game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
+		yield return new WaitForSeconds(1);
+		ui.startText.gameObject.SetActive(false);
+		Camera.main.orthographicSize = 7;
+
+		NextWave();
+	}
+
+	//Takes in dur, amount and intensity to create a camera shake.
+	public void Shake(float duration, float amount, float intensity)
+	{
+		StartCoroutine(ShakeCam(duration, amount, intensity));
+	}
+
+	//Called when the player dies.
+	public void EndGame()
+	{
+		StartCoroutine(EndGameTimer());
+	}
+
+	//Called when the player defeats the boss.
+	public void WinGame()
+	{
+		gameDone = true;
+		//player.rig.simulated = false;
+		StartCoroutine(WinGameTimer());
+	}
+
 	//Called when the next wave needs to be spawned.
-	void NextWave ()
+	private void NextWave()
 	{
 		curEnemies.Clear();
 		waveCount++;
@@ -111,13 +132,13 @@ public class Game : MonoBehaviour
 	}
 
 	//Spawns enemies overtime in random positions.
-	IEnumerator EnemySpawnLoop (Wave wave)
+	private IEnumerator EnemySpawnLoop(Wave wave)
 	{
 		//If we're not spawning a boss, then loop through and spawn all the enemies.
-		if(!wave.spawnBoss)
+		if (!wave.spawnBoss)
 		{
 			//Called for each enemy spawned.
-			for(int x = 0; x < wave.enemies.Length; x++)
+			for (int x = 0; x < wave.enemies.Length; x++)
 			{
 				yield return new WaitForSeconds(wave.spawnRates[x]);
 
@@ -141,21 +162,21 @@ public class Game : MonoBehaviour
 	}
 
 	//Called at the end of a wave. Has a delay between the wave ending, and the next wave starting.
-	IEnumerator WaveEndTimer ()
+	private IEnumerator WaveEndTimer()
 	{
-		if(!gameDone)
+		if (!gameDone)
 		{
 			yield return new WaitForSeconds(2);
 
 			//If the player needs to choose and upgrade, display that...
-			if(waveCount == 4)
+			if (waveCount == 4)
 			{
 				ui.upgradeText.gameObject.SetActive(true);
 				canUpgrade = true;
 			}
 
 			//but don't start the next round.
-			while(canUpgrade)
+			while (canUpgrade)
 			{
 				yield return null;
 			}
@@ -165,7 +186,7 @@ public class Game : MonoBehaviour
 	}
 
 	//Returns an enemy prefab based on the EnemyType enum sent.
-	GameObject GetEnemyToSpawn (EnemyBasicAI.EnemyType e)
+	private GameObject GetEnemyToSpawn(EnemyBasicAI.EnemyType e)
 	{
 		switch (e)
 		{
@@ -180,52 +201,32 @@ public class Game : MonoBehaviour
 		}
 	}
 
-	//Called when the player dies.
-	public void EndGame ()
-	{
-		StartCoroutine(EndGameTimer());
-	}
-
 	//When the player dies, delay showing the end game screen for 2 seconds.
-	IEnumerator EndGameTimer ()
+	private IEnumerator EndGameTimer()
 	{
 		yield return new WaitForSeconds(2);
 		ui.endGameScreen.SetActive(true);
 		Game.game.Shake(0.1f, 0.1f, 50.0f);
 	}
 
-	//Called when the player defeats the boss.
-	public void WinGame ()
-	{
-		gameDone = true;
-		//player.rig.simulated = false;
-		StartCoroutine(WinGameTimer());
-	}
-
 	//Delay when the boss is killed, before showing the win screen.
-	IEnumerator WinGameTimer ()
+	private IEnumerator WinGameTimer()
 	{
 		gameDone = true;
 		yield return new WaitForSeconds(2);
 		ui.winScreen.SetActive(true);
 	}
 
-	//Takes in dur, amount and intensity to create a camera shake.
-	public void Shake (float duration, float amount, float intensity)
-	{
-		StartCoroutine(ShakeCam(duration, amount, intensity));
-	}
-
 	//Shakes the camera over time.
-	IEnumerator ShakeCam (float dur, float amount, float intensity)
+	private IEnumerator ShakeCam(float dur, float amount, float intensity)
 	{
 		float t = dur;
 		Vector3 originalPos = cam.position;
 		Vector3 targetPos = Vector3.zero;
 
-		while(t > 0.0f)
+		while (t > 0.0f)
 		{
-			if(targetPos == Vector3.zero)
+			if (targetPos == Vector3.zero)
 			{
 				targetPos = Random.insideUnitCircle * amount;
 				targetPos = new Vector3(targetPos.x, targetPos.y, -10);
@@ -233,7 +234,7 @@ public class Game : MonoBehaviour
 
 			cam.position = Vector3.Lerp(cam.position, targetPos, intensity * Time.deltaTime);
 
-			if(Vector3.Distance(cam.position, targetPos) < 0.02f)
+			if (Vector3.Distance(cam.position, targetPos) < 0.02f)
 			{
 				targetPos = Vector3.zero;
 			}
