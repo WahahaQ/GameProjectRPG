@@ -3,10 +3,15 @@
 [RequireComponent(typeof(Animator))]
 public class HealthController : MonoBehaviour
 {
-	[SerializeField]
-	private Animator animatorComponent;
+#pragma warning disable 0649
 
-	public int currentHealth, maxHealth;
+	[SerializeField]
+	private Animator animatorComponent;		// Player animator component
+
+#pragma warning restore 0649
+
+	public int currentHealth, maxHealth;	// Represents player's current/max health
+
 
 	public void TakeDamage(int damage)
 	{
@@ -24,6 +29,8 @@ public class HealthController : MonoBehaviour
 			//StartCoroutine(WaitForAnimation(animatorComponent));
 		}
 	}
+
+	// TODO:
 
 	//private IEnumerator WaitForAnimation(Animator playerAnimatorComponent)
 	//{

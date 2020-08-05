@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour 
+public class Projectile : MonoBehaviour
 {
 	public bool playerOwned; //Does the player own this projectile?
 	public bool hittable;
@@ -11,29 +11,30 @@ public class Projectile : MonoBehaviour
 	public int damage;
 	public Rigidbody2D rig;
 	private GameObject player;
+	public Vector3 impactNormal;
 	public GameObject projectileDeathParticle;
 
 	//Side Stepping
 	private bool stepLeft;
 	private float stepTimer;
 
-	void Start ()
+	private void Start()
 	{
-		if(!followPlayer)
+		if (!followPlayer)
 			Destroy(gameObject, 3.0f);
 
-		if(GetComponent<TrailRenderer>())
+		if (GetComponent<TrailRenderer>())
 			GetComponent<TrailRenderer>().sortingLayerName = "Enemy";
 	}
 
-	void Update ()
+	private void Update()
 	{
 		//If the projectile follows the player, follow them.
-		if(followPlayer)
+		if (followPlayer)
 		{
-			if(!player)
+			if (!player)
 			{
-				if(Game.game.playerShootingBehaviour)
+				if (Game.game.playerShootingBehaviour)
 				{
 					player = Game.game.playerGameObject;
 				}
@@ -45,10 +46,10 @@ public class Projectile : MonoBehaviour
 		}
 
 		//Side Stepping
-		if(name.Contains("Orb"))
+		if (name.Contains("Orb"))
 		{
 			//Used for the king's green orbs. Bounces side to side.
-			if(stepTimer <= 0.0f)
+			if (stepTimer <= 0.0f)
 			{
 				stepTimer = Random.Range(0.5f, 1.0f);
 				stepLeft = !stepLeft;
@@ -56,13 +57,11 @@ public class Projectile : MonoBehaviour
 
 			stepTimer -= Time.deltaTime;
 
-			transform.position += (stepLeft?transform.right:-transform.right) * 2.0f * Time.deltaTime;
+			transform.position += (stepLeft ? transform.right : -transform.right) * 2.0f * Time.deltaTime;
 		}
 	}
 
-	public Vector3 impactNormal;
-
-	void OnTriggerEnter(Collider hit)
+	private void OnTriggerEnter(Collider hit)
 	{
 		if (hit.CompareTag("Enemy") || hit.CompareTag("Wall"))
 		{
@@ -72,19 +71,19 @@ public class Projectile : MonoBehaviour
 		}
 	}
 
-	void OnTriggerEnter2D (Collider2D col)
+	private void OnTriggerEnter2D(Collider2D col)
 	{
 		//If it's the player's projectile then just check for the enemy tag.
-		if(playerOwned)
+		if (playerOwned)
 		{
 			GameObject pe = Instantiate(projectileDeathParticle, col.gameObject.transform.position, Quaternion.identity);
 			Destroy(pe, 0.2f);
 
-			if (col.gameObject.tag == "Enemy")
+			if (col.gameObject.CompareTag("Enemy"))
 			{
-				if(!col.gameObject.name.Contains("King"))
+				if (!col.gameObject.name.Contains("King"))
 				{
-					col.gameObject.GetComponent<Enemy>().TakeDamage(damage);
+					col.gameObject.GetComponent<EnemyBasicAI>().TakeDamage(damage);
 				}
 				else
 				{
@@ -94,9 +93,9 @@ public class Projectile : MonoBehaviour
 				Destroy(gameObject);
 			}
 
-			else if(col.gameObject.CompareTag("Projectile"))
+			else if (col.gameObject.CompareTag("Projectile"))
 			{
-				if(col.gameObject.GetComponent<Projectile>().hittable)
+				if (col.gameObject.GetComponent<Projectile>().hittable)
 				{
 					Destroy(col.gameObject);
 					Destroy(gameObject);
@@ -106,7 +105,7 @@ public class Projectile : MonoBehaviour
 		//Otherwise check for the player tag.
 		else
 		{
-			if(col.gameObject.tag == "Player")
+			if (col.gameObject.CompareTag("PlayerHitbox"))
 			{
 				Game.game.playerHealthController.TakeDamage(damage);
 				Destroy(gameObject);

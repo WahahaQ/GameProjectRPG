@@ -2,8 +2,12 @@
 
 public class ShootingBehaviour : MonoBehaviour 
 {
+#pragma warning disable 0649
+
 	[SerializeField]
-	private GameObject bulletPrefab, explosionPrefab, muzzleFlashPrefab;
+	private GameObject bulletPrefab, muzzleFlashPrefab;
+
+#pragma warning restore 0649
 
 	public int damage;
 	public float attackRate, bulletSpeed;
@@ -15,10 +19,6 @@ public class ShootingBehaviour : MonoBehaviour
 	{
 		attackTimer += Time.deltaTime;
 
-		Camera cam = Camera.main;
-		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -cam.orthographicSize * cam.aspect + 0.4f, cam.orthographicSize * cam.aspect - 0.4f), 
-		
-		Mathf.Clamp(transform.position.y, -cam.orthographicSize + 0.4f, cam.orthographicSize - 0.4f), 0);
 		Inputs();
 	}
 

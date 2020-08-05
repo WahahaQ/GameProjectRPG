@@ -2,9 +2,14 @@
 
 public class WeaponRotation : MonoBehaviour
 {
+#pragma warning disable 0649
+
 	[SerializeField]
 	private GameObject playerGameObject;
-	
+
+#pragma warning restore 0649
+
+
 	private void FixedUpdate()
 	{
 		Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;

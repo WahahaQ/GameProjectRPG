@@ -19,12 +19,4 @@
 	public const string BUTTON_NAME_NEXT_WEAPON = "NextWeapon";
 	public const string BUTTON_NAME_PAUSE_MENU = "Pause Menu";
 	public const string BUTTON_NAME_CANCEL = "Cancel";
-
-	// Random map generation
-	public const int MIN_RANDOM_FILL_PERCENT = 0;
-	public const int MAX_RANDOM_FILL_PERCENT = 100;
-	public const int MIN_BIRTH_DEATH_LIMIT = 1;
-	public const int MAX_BIRTH_DEATH_LIMIT = 8;
-	public const int MIN_REPETITIONS_LIMIT = 0;
-	public const int MAX_REPETITIONS_LIMIT = 10;
 }

@@ -125,7 +125,7 @@ public class Game : MonoBehaviour
 				Vector3 randomOffset = new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), 0);
 				GameObject enemy = Instantiate(enemyToSpawn, spawnPoints[Random.Range(0, spawnPoints.Length)].position + randomOffset, Quaternion.identity);
 
-				enemy.GetComponent<Enemy>().target = playerGameObject;
+				enemy.GetComponent<EnemyBasicAI>().target = playerGameObject;
 				curEnemies.Add(enemy);
 			}
 		}
@@ -165,15 +165,15 @@ public class Game : MonoBehaviour
 	}
 
 	//Returns an enemy prefab based on the EnemyType enum sent.
-	GameObject GetEnemyToSpawn (EnemyType e)
+	GameObject GetEnemyToSpawn (EnemyBasicAI.EnemyType e)
 	{
 		switch (e)
 		{
-			case EnemyType.Knight:
+			case EnemyBasicAI.EnemyType.Knight:
 				return knightPrefab;
-			case EnemyType.Archer:
+			case EnemyBasicAI.EnemyType.Archer:
 				return archerPrefab;
-			case EnemyType.Mage:
+			case EnemyBasicAI.EnemyType.Mage:
 				return magePrefab;
 			default:
 				return null;

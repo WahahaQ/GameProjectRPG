@@ -3,30 +3,32 @@
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 public class PlayerMovement : MonoBehaviour
 {
+#pragma warning disable 0649
+
 	[SerializeField]
 	private float movementSpeed = 5f;		// Player movement speed
+
+	private SpriteRenderer spriteRenderer;	// Player sprite renderer component
+	private Rigidbody2D playerRigidbody;	// Player rigidbody component
+
+#pragma warning restore 0649
 
 	[System.NonSerialized]
 	public Directions playerFacing;			// Represents the current player facing direction
 
-	private SpriteRenderer spriteRenderer;	// Player sprite renderer component
-	private Rigidbody2D playerRigidbody;	// Player rigidbody component
 	private Animator animatorComponent;		// Player animator component
 	private Vector2 movementVector;			// Player movement vector
 
-	private static Vector2 characterScale;  // Character default scale
-	
-
 	public enum Directions
 	{
-		NORTH,			// N	|	↑
-		NORTH_EAST,		// NE	|	↗
-		EAST,			// E	|	→
-		SOUTH_EAST,		// SE	|	↘
-		SOUTH,			// S	|	↓
-		SOUTH_WEST,		// SW	|	↙
-		WEST,			// W	|	←
-		NORTH_WEST		// NW	|	↖
+		NORTH,          // N	|	↑
+		NORTH_EAST,     // NE	|	↗
+		EAST,           // E	|	→
+		SOUTH_EAST,     // SE	|	↘
+		SOUTH,          // S	|	↓
+		SOUTH_WEST,     // SW	|	↙
+		WEST,           // W	|	←
+		NORTH_WEST      // NW	|	↖
 	};
 
 
@@ -40,9 +42,6 @@ public class PlayerMovement : MonoBehaviour
 
 		// Get player sprite renderer component
 		spriteRenderer = GetComponent<SpriteRenderer>();
-
-		// Get the character scale
-		characterScale = transform.localScale;
 	}
 
 	private void Update()
@@ -91,7 +90,6 @@ public class PlayerMovement : MonoBehaviour
 
 				// Flip the character
 				spriteRenderer.flipX = true;
-				//transform.localScale = new Vector2(characterScale.x * -1, transform.localScale.y);  ;
 				break;
 			case 0:
 				if (movementVector.y == 0)
@@ -108,7 +106,6 @@ public class PlayerMovement : MonoBehaviour
 
 				// Flip the character
 				spriteRenderer.flipX = false;
-				//transform.localScale = new Vector2(characterScale.x, transform.localScale.y); ;
 				break;
 		}
 	}
