@@ -1,0 +1,5015 @@
+fileFormatVersion: 2
+guid: d7c6f5542fdf4ec4b87764cfdf88c4ec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1605371495305231501
+    second: forest-tilemap_0
+  - first:
+      213: -7329281165872607025
+    second: forest-tilemap_1
+  - first:
+      213: -6970389733310115547
+    second: forest-tilemap_2
+  - first:
+      213: 8494001706050649834
+    second: forest-tilemap_3
+  - first:
+      213: 4929843376173619662
+    second: forest-tilemap_4
+  - first:
+      213: -8002427444012069750
+    second: forest-tilemap_5
+  - first:
+      213: -7710393450605975636
+    second: forest-tilemap_6
+  - first:
+      213: 1184498513100317994
+    second: forest-tilemap_7
+  - first:
+      213: 4856009037124873705
+    second: forest-tilemap_8
+  - first:
+      213: 6055225392647304020
+    second: forest-tilemap_9
+  - first:
+      213: 8317084504268393879
+    second: forest-tilemap_10
+  - first:
+      213: 8618489078468953555
+    second: forest-tilemap_11
+  - first:
+      213: 1932195291503352559
+    second: forest-tilemap_12
+  - first:
+      213: 6523762019370064276
+    second: forest-tilemap_13
+  - first:
+      213: 7242939785250769536
+    second: forest-tilemap_14
+  - first:
+      213: 7150524983415913767
+    second: forest-tilemap_15
+  - first:
+      213: 1935915377104180526
+    second: forest-tilemap_16
+  - first:
+      213: 7536081202875363874
+    second: forest-tilemap_17
+  - first:
+      213: 8849188365663405395
+    second: forest-tilemap_18
+  - first:
+      213: -5991518882270510603
+    second: forest-tilemap_19
+  - first:
+      213: 2435763427848417656
+    second: forest-tilemap_20
+  - first:
+      213: -3776186246798808559
+    second: forest-tilemap_21
+  - first:
+      213: -182553173778454800
+    second: forest-tilemap_22
+  - first:
+      213: 2203770051744220910
+    second: forest-tilemap_23
+  - first:
+      213: 5318827614668476148
+    second: forest-tilemap_24
+  - first:
+      213: 7378228929102486514
+    second: forest-tilemap_25
+  - first:
+      213: 8240228099628629842
+    second: forest-tilemap_26
+  - first:
+      213: -5613659823510582174
+    second: forest-tilemap_27
+  - first:
+      213: -319751196781060890
+    second: forest-tilemap_28
+  - first:
+      213: 8503735279299500492
+    second: forest-tilemap_29
+  - first:
+      213: 226530650961564903
+    second: forest-tilemap_30
+  - first:
+      213: 4727903123574263808
+    second: forest-tilemap_31
+  - first:
+      213: -280554291800590305
+    second: forest-tilemap_32
+  - first:
+      213: -8330233748762735940
+    second: forest-tilemap_33
+  - first:
+      213: -1685861377384317655
+    second: forest-tilemap_34
+  - first:
+      213: 8163958510780489866
+    second: forest-tilemap_35
+  - first:
+      213: -6320003903783340523
+    second: forest-tilemap_36
+  - first:
+      213: -6674230898114330774
+    second: forest-tilemap_37
+  - first:
+      213: 5980155908896011041
+    second: forest-tilemap_38
+  - first:
+      213: 5441857935982935009
+    second: forest-tilemap_39
+  - first:
+      213: -3028541304066813762
+    second: forest-tilemap_40
+  - first:
+      213: -9184612356241251634
+    second: forest-tilemap_41
+  - first:
+      213: 4456256720469742607
+    second: forest-tilemap_42
+  - first:
+      213: -9029804134567237997
+    second: forest-tilemap_43
+  - first:
+      213: -3482933261956505061
+    second: forest-tilemap_44
+  - first:
+      213: -3790658576356253364
+    second: forest-tilemap_45
+  - first:
+      213: -6877944417224355061
+    second: forest-tilemap_46
+  - first:
+      213: -817649483275375614
+    second: forest-tilemap_47
+  - first:
+      213: -3366042719667564259
+    second: forest-tilemap_48
+  - first:
+      213: 374790635051924188
+    second: forest-tilemap_49
+  - first:
+      213: 5708006242949368907
+    second: forest-tilemap_50
+  - first:
+      213: -961448730979507398
+    second: forest-tilemap_51
+  - first:
+      213: 220507743187197334
+    second: forest-tilemap_52
+  - first:
+      213: 8540606633816830866
+    second: forest-tilemap_53
+  - first:
+      213: -3509180540300799335
+    second: forest-tilemap_54
+  - first:
+      213: 4304660657931152143
+    second: forest-tilemap_55
+  - first:
+      213: -4677183937536939945
+    second: forest-tilemap_56
+  - first:
+      213: 6555540144272999057
+    second: forest-tilemap_57
+  - first:
+      213: -5298696264624861866
+    second: forest-tilemap_58
+  - first:
+      213: -771817601766882710
+    second: forest-tilemap_59
+  - first:
+      213: 1840417913459810229
+    second: forest-tilemap_60
+  - first:
+      213: -4609782950706233922
+    second: forest-tilemap_61
+  - first:
+      213: -6229351056042680680
+    second: forest-tilemap_62
+  - first:
+      213: 8495865928985991225
+    second: forest-tilemap_63
+  - first:
+      213: 8216369149064855301
+    second: forest-tilemap_64
+  - first:
+      213: -2742299651373072110
+    second: forest-tilemap_65
+  - first:
+      213: 2107412342351583859
+    second: forest-tilemap_66
+  - first:
+      213: 8203524070248061095
+    second: forest-tilemap_67
+  - first:
+      213: -6677218415572917371
+    second: forest-tilemap_68
+  - first:
+      213: -2673238188024639269
+    second: forest-tilemap_69
+  - first:
+      213: 2899419266341149606
+    second: forest-tilemap_70
+  - first:
+      213: 5489952043365899556
+    second: forest-tilemap_71
+  - first:
+      213: -1692992393580843939
+    second: forest-tilemap_72
+  - first:
+      213: 376376307233155774
+    second: forest-tilemap_73
+  - first:
+      213: -1266932704240480192
+    second: forest-tilemap_74
+  - first:
+      213: -2612490915670306083
+    second: forest-tilemap_75
+  - first:
+      213: 3093069503420797478
+    second: forest-tilemap_76
+  - first:
+      213: 1933601025701921994
+    second: forest-tilemap_77
+  - first:
+      213: 4802442597298871732
+    second: forest-tilemap_78
+  - first:
+      213: 8139081445834756646
+    second: forest-tilemap_79
+  - first:
+      213: 7158600690666910710
+    second: forest-tilemap_80
+  - first:
+      213: 4767167199537876183
+    second: forest-tilemap_81
+  - first:
+      213: 4648523138733011249
+    second: forest-tilemap_82
+  - first:
+      213: 4069120548188103422
+    second: forest-tilemap_83
+  - first:
+      213: 6927294279010516713
+    second: forest-tilemap_84
+  - first:
+      213: -5637746634408170659
+    second: forest-tilemap_85
+  - first:
+      213: -366237505817362752
+    second: forest-tilemap_86
+  - first:
+      213: -7674056159433778498
+    second: forest-tilemap_87
+  - first:
+      213: -3758705591886135282
+    second: forest-tilemap_88
+  - first:
+      213: 6164262064943062756
+    second: forest-tilemap_89
+  - first:
+      213: -4729902586999801241
+    second: forest-tilemap_90
+  - first:
+      213: 5084699059940665624
+    second: forest-tilemap_91
+  - first:
+      213: 1815695286510390265
+    second: forest-tilemap_92
+  - first:
+      213: 2538278493211361844
+    second: forest-tilemap_93
+  - first:
+      213: -7266391487704610623
+    second: forest-tilemap_94
+  - first:
+      213: 6802557572311145650
+    second: forest-tilemap_95
+  - first:
+      213: -2919221640805538701
+    second: forest-tilemap_96
+  - first:
+      213: 7587770737597388464
+    second: forest-tilemap_97
+  - first:
+      213: 3203912663213384621
+    second: forest-tilemap_98
+  - first:
+      213: -1882815949543853191
+    second: forest-tilemap_99
+  - first:
+      213: -95269968706486334
+    second: forest-tilemap_100
+  - first:
+      213: 5390072170673703156
+    second: forest-tilemap_101
+  - first:
+      213: 5841383432746407098
+    second: forest-tilemap_102
+  - first:
+      213: -2828820370720145939
+    second: forest-tilemap_103
+  - first:
+      213: -7903928160175746611
+    second: forest-tilemap_104
+  - first:
+      213: -5892623192304507055
+    second: forest-tilemap_105
+  - first:
+      213: -1551123882530698073
+    second: forest-tilemap_106
+  - first:
+      213: -7448661371487152526
+    second: forest-tilemap_107
+  - first:
+      213: -7206973555808133549
+    second: forest-tilemap_108
+  - first:
+      213: -3688103888446943225
+    second: forest-tilemap_109
+  - first:
+      213: 4735380414662325789
+    second: forest-tilemap_110
+  - first:
+      213: -8522941170826839692
+    second: forest-tilemap_111
+  - first:
+      213: -4160549328792585556
+    second: forest-tilemap_112
+  - first:
+      213: 223021229687993867
+    second: forest-tilemap_113
+  - first:
+      213: -6036776205147108414
+    second: forest-tilemap_114
+  - first:
+      213: -6427177745824116260
+    second: forest-tilemap_115
+  - first:
+      213: -7026114630945024460
+    second: forest-tilemap_116
+  - first:
+      213: -2336214082152438980
+    second: forest-tilemap_117
+  - first:
+      213: 8367361459036947357
+    second: forest-tilemap_118
+  - first:
+      213: 6153565320947758833
+    second: forest-tilemap_119
+  - first:
+      213: -8880614886216589325
+    second: forest-tilemap_120
+  - first:
+      213: -2423670702683794941
+    second: forest-tilemap_121
+  - first:
+      213: 6335936927825725320
+    second: forest-tilemap_122
+  - first:
+      213: -7696042014080205618
+    second: forest-tilemap_123
+  - first:
+      213: 7859024605090404417
+    second: forest-tilemap_124
+  - first:
+      213: 6385846245300972240
+    second: forest-tilemap_125
+  - first:
+      213: 3847884338804259560
+    second: forest-tilemap_126
+  - first:
+      213: 4111030487138101675
+    second: forest-tilemap_127
+  - first:
+      213: -6066072206520257699
+    second: forest-tilemap_128
+  - first:
+      213: 3583742858847810194
+    second: forest-tilemap_129
+  - first:
+      213: -7954369026154439338
+    second: forest-tilemap_130
+  - first:
+      213: 5160170111470005166
+    second: forest-tilemap_131
+  - first:
+      213: -8106347041661009253
+    second: forest-tilemap_132
+  - first:
+      213: 2894115204596645596
+    second: forest-tilemap_133
+  - first:
+      213: 9170913362198328656
+    second: forest-tilemap_134
+  - first:
+      213: -5732623901021194002
+    second: forest-tilemap_135
+  - first:
+      213: -8293588920976881491
+    second: forest-tilemap_136
+  - first:
+      213: -3686886782282343514
+    second: forest-tilemap_137
+  - first:
+      213: -4617687352511467374
+    second: forest-tilemap_138
+  - first:
+      213: 6504135916626410201
+    second: forest-tilemap_139
+  - first:
+      213: 3390837289660355268
+    second: forest-tilemap_140
+  - first:
+      213: -3962380583606055381
+    second: forest-tilemap_141
+  - first:
+      213: -9098191841653822603
+    second: forest-tilemap_142
+  - first:
+      213: 4874232506544871258
+    second: forest-tilemap_143
+  - first:
+      213: -200990529010223655
+    second: forest-tilemap_144
+  - first:
+      213: -6219713472638898523
+    second: forest-tilemap_145
+  - first:
+      213: 5933506411424106806
+    second: forest-tilemap_146
+  - first:
+      213: -5455157557691888663
+    second: forest-tilemap_147
+  - first:
+      213: 64518630636322318
+    second: forest-tilemap_148
+  - first:
+      213: 9125542846746202880
+    second: forest-tilemap_149
+  - first:
+      213: -3291541567488027217
+    second: forest-tilemap_150
+  - first:
+      213: 689769576712698733
+    second: forest-tilemap_151
+  - first:
+      213: -6568320782287419793
+    second: forest-tilemap_152
+  - first:
+      213: 7560748131469859542
+    second: forest-tilemap_153
+  - first:
+      213: -5428562039825180414
+    second: forest-tilemap_154
+  - first:
+      213: -4747144138166443277
+    second: forest-tilemap_155
+  - first:
+      213: -6732875694109070550
+    second: forest-tilemap_156
+  - first:
+      213: 979898255974963826
+    second: forest-tilemap_157
+  - first:
+      213: -6198954766092581054
+    second: forest-tilemap_158
+  - first:
+      213: -7062886372982414910
+    second: forest-tilemap_159
+  - first:
+      213: 5951575085827329185
+    second: forest-tilemap_160
+  - first:
+      213: -5489756767938552799
+    second: forest-tilemap_161
+  - first:
+      213: 293928649377928127
+    second: forest-tilemap_162
+  - first:
+      213: -3666247046829695383
+    second: forest-tilemap_163
+  - first:
+      213: -6836636215502060406
+    second: forest-tilemap_164
+  - first:
+      213: 8233039275602167078
+    second: forest-tilemap_165
+  - first:
+      213: -7166594271452236027
+    second: forest-tilemap_166
+  - first:
+      213: 8434551303134178210
+    second: forest-tilemap_167
+  - first:
+      213: -3069461019415141851
+    second: forest-tilemap_168
+  - first:
+      213: 6960569721376899271
+    second: forest-tilemap_169
+  - first:
+      213: -2411567507898376866
+    second: forest-tilemap_170
+  - first:
+      213: -5872633871702730939
+    second: forest-tilemap_171
+  - first:
+      213: -5911297724613489545
+    second: forest-tilemap_172
+  - first:
+      213: -3047079407124838657
+    second: forest-tilemap_173
+  - first:
+      213: -2983387553366458159
+    second: forest-tilemap_174
+  - first:
+      213: 5497788526289938427
+    second: forest-tilemap_175
+  - first:
+      213: 221495516986941315
+    second: forest-tilemap_176
+  - first:
+      213: 8824236567847059668
+    second: forest-tilemap_177
+  - first:
+      213: -5817178748898414475
+    second: forest-tilemap_178
+  - first:
+      213: 5267749714563232154
+    second: forest-tilemap_179
+  - first:
+      213: 1191265105075588146
+    second: forest-tilemap_180
+  - first:
+      213: -1378420063318904787
+    second: forest-tilemap_181
+  - first:
+      213: -2320679905908886259
+    second: forest-tilemap_182
+  - first:
+      213: 8765591655674685531
+    second: forest-tilemap_183
+  - first:
+      213: -3323682930643061240
+    second: forest-tilemap_184
+  - first:
+      213: 5023349506436636751
+    second: forest-tilemap_185
+  - first:
+      213: 8851851580243950090
+    second: forest-tilemap_186
+  - first:
+      213: 7674303278884117829
+    second: forest-tilemap_187
+  - first:
+      213: 792054069329819768
+    second: forest-tilemap_188
+  - first:
+      213: -1816754470727554724
+    second: forest-tilemap_189
+  - first:
+      213: 6829191377176388328
+    second: forest-tilemap_190
+  - first:
+      213: 6114725922637829202
+    second: forest-tilemap_191
+  - first:
+      213: -1910412531302174280
+    second: forest-tilemap_192
+  - first:
+      213: -3164651748868763520
+    second: forest-tilemap_193
+  - first:
+      213: -8046928181423330217
+    second: forest-tilemap_194
+  - first:
+      213: 6028427098902347185
+    second: forest-tilemap_195
+  - first:
+      213: 59152790947438386
+    second: forest-tilemap_196
+  - first:
+      213: 671547601685032288
+    second: forest-tilemap_197
+  - first:
+      213: 559891606817138743
+    second: forest-tilemap_198
+  - first:
+      213: -4535658292998718235
+    second: forest-tilemap_199
+  - first:
+      213: 1694224087922550490
+    second: forest-tilemap_200
+  - first:
+      213: -1448897095864446061
+    second: forest-tilemap_201
+  - first:
+      213: 2601128558631874000
+    second: forest-tilemap_202
+  - first:
+      213: -5238411792550400044
+    second: forest-tilemap_203
+  - first:
+      213: 2525174596168377803
+    second: forest-tilemap_204
+  - first:
+      213: 6729072684912706008
+    second: forest-tilemap_205
+  - first:
+      213: -7414276456342011257
+    second: forest-tilemap_206
+  - first:
+      213: 5996575541250965217
+    second: forest-tilemap_207
+  - first:
+      213: 8698204077107466513
+    second: forest-tilemap_208
+  - first:
+      213: -5898305849231362990
+    second: forest-tilemap_209
+  - first:
+      213: 3948584642156525884
+    second: forest-tilemap_210
+  - first:
+      213: -6543967046708216476
+    second: forest-tilemap_211
+  - first:
+      213: 6656816341147873218
+    second: forest-tilemap_212
+  - first:
+      213: -9048200289468560650
+    second: forest-tilemap_213
+  - first:
+      213: 3390481134935779394
+    second: forest-tilemap_214
+  - first:
+      213: -1852859906724573422
+    second: forest-tilemap_215
+  - first:
+      213: 1124202006250318350
+    second: forest-tilemap_216
+  - first:
+      213: 4163354338800213261
+    second: forest-tilemap_217
+  - first:
+      213: 7507274122066396124
+    second: forest-tilemap_218
+  - first:
+      213: 4436516512179457642
+    second: forest-tilemap_219
+  - first:
+      213: 8914546459564329866
+    second: forest-tilemap_220
+  - first:
+      213: -3049056406726962256
+    second: forest-tilemap_221
+  - first:
+      213: -1902565818766765905
+    second: forest-tilemap_222
+  - first:
+      213: -5050231361366492485
+    second: forest-tilemap_223
+  - first:
+      213: -5529585658890209005
+    second: forest-tilemap_224
+  - first:
+      213: 9120575852743818804
+    second: forest-tilemap_225
+  - first:
+      213: 2574775694685071102
+    second: forest-tilemap_226
+  - first:
+      213: -6110560045660222900
+    second: forest-tilemap_227
+  - first:
+      213: -4738503364727835257
+    second: forest-tilemap_228
+  - first:
+      213: 1019383204907968387
+    second: forest-tilemap_229
+  - first:
+      213: 6238399669924318052
+    second: forest-tilemap_230
+  - first:
+      213: -3956965592043235643
+    second: forest-tilemap_231
+  - first:
+      213: 884219889386521545
+    second: forest-tilemap_232
+  - first:
+      213: -1789510265966734775
+    second: forest-tilemap_233
+  - first:
+      213: -5189075994837752403
+    second: forest-tilemap_234
+  - first:
+      213: -5862450930628161169
+    second: forest-tilemap_235
+  - first:
+      213: -544426471818805221
+    second: forest-tilemap_236
+  - first:
+      213: 6630415961111885410
+    second: forest-tilemap_237
+  - first:
+      213: 3127279971812955392
+    second: forest-tilemap_238
+  - first:
+      213: 3657726882562523984
+    second: forest-tilemap_239
+  - first:
+      213: -6292518531148841716
+    second: forest-tilemap_240
+  - first:
+      213: 4789157642652646804
+    second: forest-tilemap_241
+  - first:
+      213: 9059024395030707133
+    second: forest-tilemap_242
+  - first:
+      213: -7184166915582438562
+    second: forest-tilemap_243
+  - first:
+      213: 182451771928339337
+    second: forest-tilemap_244
+  - first:
+      213: 1263029293909925802
+    second: forest-tilemap_245
+  - first:
+      213: 4980728108800787457
+    second: forest-tilemap_246
+  - first:
+      213: 8784748056944528763
+    second: forest-tilemap_247
+  - first:
+      213: -8858703636763252839
+    second: forest-tilemap_248
+  - first:
+      213: -613532192044142008
+    second: forest-tilemap_249
+  - first:
+      213: -6255333778622666735
+    second: forest-tilemap_250
+  - first:
+      213: -7849846196980050035
+    second: forest-tilemap_251
+  - first:
+      213: -102934713770406322
+    second: forest-tilemap_252
+  - first:
+      213: -7931813279988987894
+    second: forest-tilemap_253
+  - first:
+      213: -7424311706290614321
+    second: forest-tilemap_254
+  - first:
+      213: 6515289261204507009
+    second: forest-tilemap_255
+  - first:
+      213: 7233228732165675886
+    second: forest-tilemap_256
+  - first:
+      213: 6566801031883410958
+    second: forest-tilemap_257
+  - first:
+      213: -2165103867570476629
+    second: forest-tilemap_258
+  - first:
+      213: -97919568665962975
+    second: forest-tilemap_259
+  - first:
+      213: -3244505035298316211
+    second: forest-tilemap_260
+  - first:
+      213: -2424184494597940587
+    second: forest-tilemap_261
+  - first:
+      213: -9167127737507239025
+    second: forest-tilemap_262
+  - first:
+      213: -5551562238687071774
+    second: forest-tilemap_263
+  - first:
+      213: -8832690558674281407
+    second: forest-tilemap_264
+  - first:
+      213: -5310156131976335668
+    second: forest-tilemap_265
+  - first:
+      213: -8912885972256610937
+    second: forest-tilemap_266
+  - first:
+      213: -4120698765576908707
+    second: forest-tilemap_267
+  - first:
+      213: -3647688554322905112
+    second: forest-tilemap_268
+  - first:
+      213: 7332809756688013804
+    second: forest-tilemap_269
+  - first:
+      213: 3502790439730505513
+    second: forest-tilemap_270
+  - first:
+      213: -4599302667341401298
+    second: forest-tilemap_271
+  - first:
+      213: 1181828517004846573
+    second: forest-tilemap_272
+  - first:
+      213: 672066072413901474
+    second: forest-tilemap_273
+  - first:
+      213: 5189517127588122964
+    second: forest-tilemap_274
+  - first:
+      213: 7862625589634504577
+    second: forest-tilemap_275
+  - first:
+      213: 3515882940209202877
+    second: forest-tilemap_276
+  - first:
+      213: 2646181359260118864
+    second: forest-tilemap_277
+  - first:
+      213: -1122046280712872883
+    second: forest-tilemap_278
+  - first:
+      213: 6800811673750826742
+    second: forest-tilemap_279
+  - first:
+      213: 7658922286024474014
+    second: forest-tilemap_280
+  - first:
+      213: -3446765560493198964
+    second: forest-tilemap_281
+  - first:
+      213: 2304624644914751213
+    second: forest-tilemap_282
+  - first:
+      213: -3880996618790845445
+    second: forest-tilemap_283
+  - first:
+      213: -2914605481751629443
+    second: forest-tilemap_284
+  - first:
+      213: -7051872961437639702
+    second: forest-tilemap_285
+  - first:
+      213: 5316140601325144302
+    second: forest-tilemap_286
+  - first:
+      213: -3318082800164605091
+    second: forest-tilemap_287
+  - first:
+      213: -4570124254950477633
+    second: forest-tilemap_288
+  - first:
+      213: -2406707504647035806
+    second: forest-tilemap_289
+  - first:
+      213: 371161861007387188
+    second: forest-tilemap_290
+  - first:
+      213: -4081861302627021022
+    second: forest-tilemap_291
+  - first:
+      213: 3628714620921510158
+    second: forest-tilemap_292
+  - first:
+      213: 8683047011256329410
+    second: forest-tilemap_293
+  - first:
+      213: -3787558669249221805
+    second: forest-tilemap_294
+  - first:
+      213: 6798245867400879489
+    second: forest-tilemap_295
+  - first:
+      213: -438599518267097343
+    second: forest-tilemap_296
+  - first:
+      213: 5963395819115635174
+    second: forest-tilemap_297
+  - first:
+      213: 6693477646096864190
+    second: forest-tilemap_298
+  - first:
+      213: -7957104500029667799
+    second: forest-tilemap_299
+  - first:
+      213: 4422490955294685521
+    second: forest-tilemap_300
+  - first:
+      213: -6356651613332168400
+    second: forest-tilemap_301
+  - first:
+      213: -6872957784472277053
+    second: forest-tilemap_302
+  - first:
+      213: 2011300222851315662
+    second: forest-tilemap_303
+  - first:
+      213: 3489051325798735908
+    second: forest-tilemap_304
+  - first:
+      213: 3062102331750242571
+    second: forest-tilemap_305
+  - first:
+      213: 3414731782514726354
+    second: forest-tilemap_306
+  - first:
+      213: 7499456032461529870
+    second: forest-tilemap_307
+  - first:
+      213: -5555904259337022850
+    second: forest-tilemap_308
+  - first:
+      213: 7748898628777285489
+    second: forest-tilemap_309
+  - first:
+      213: -3941133879022286700
+    second: forest-tilemap_310
+  - first:
+      213: -4868393134304463386
+    second: forest-tilemap_311
+  - first:
+      213: 4494407161651069129
+    second: forest-tilemap_312
+  - first:
+      213: -5481308749852296177
+    second: forest-tilemap_313
+  - first:
+      213: 1735328774255866770
+    second: forest-tilemap_314
+  - first:
+      213: 3407721313981572535
+    second: forest-tilemap_315
+  - first:
+      213: -983521422322515934
+    second: forest-tilemap_316
+  - first:
+      213: 7119430315188528364
+    second: forest-tilemap_317
+  - first:
+      213: 8343920588708853548
+    second: forest-tilemap_318
+  - first:
+      213: -1010179909677650775
+    second: forest-tilemap_319
+  - first:
+      213: -5890217160102179246
+    second: forest-tilemap_320
+  - first:
+      213: 5539519407945056745
+    second: forest-tilemap_321
+  - first:
+      213: -2869960274689700519
+    second: forest-tilemap_322
+  - first:
+      213: 1147663898849045144
+    second: forest-tilemap_323
+  - first:
+      213: -4360844141155783072
+    second: forest-tilemap_324
+  - first:
+      213: -2016646026814378900
+    second: forest-tilemap_325
+  - first:
+      213: -229994703377328210
+    second: forest-tilemap_326
+  - first:
+      213: 4271811385452416824
+    second: forest-tilemap_327
+  - first:
+      213: 5055291325160030810
+    second: forest-tilemap_328
+  - first:
+      213: -1536497614840843534
+    second: forest-tilemap_329
+  - first:
+      213: 2709934258384327049
+    second: forest-tilemap_330
+  - first:
+      213: -515458013365255153
+    second: forest-tilemap_331
+  - first:
+      213: -7217850376117605198
+    second: forest-tilemap_332
+  - first:
+      213: -6172418987659846327
+    second: forest-tilemap_333
+  - first:
+      213: 480697606186482746
+    second: forest-tilemap_334
+  - first:
+      213: -337569721204101665
+    second: forest-tilemap_335
+  - first:
+      213: -5984236031205298428
+    second: forest-tilemap_336
+  - first:
+      213: 2340616870382880967
+    second: forest-tilemap_337
+  - first:
+      213: -2786653164918211368
+    second: forest-tilemap_338
+  - first:
+      213: -6782416199335006463
+    second: forest-tilemap_339
+  - first:
+      213: 8309074802258081325
+    second: forest-tilemap_340
+  - first:
+      213: 916170418652848937
+    second: forest-tilemap_341
+  - first:
+      213: -4128306006188764015
+    second: forest-tilemap_342
+  - first:
+      213: -3239799498021585522
+    second: forest-tilemap_343
+  - first:
+      213: 457128260380030161
+    second: forest-tilemap_344
+  - first:
+      213: 2848421252786947794
+    second: forest-tilemap_345
+  - first:
+      213: 2585007632083734793
+    second: forest-tilemap_346
+  - first:
+      213: -8164719222587844484
+    second: forest-tilemap_347
+  - first:
+      213: 134904574155552739
+    second: forest-tilemap_348
+  - first:
+      213: 336199793535659498
+    second: forest-tilemap_349
+  - first:
+      213: -6736562564107614384
+    second: forest-tilemap_350
+  - first:
+      213: -3555004249316931031
+    second: forest-tilemap_351
+  - first:
+      213: 1238082180818665364
+    second: forest-tilemap_352
+  - first:
+      213: 1268237276931952716
+    second: forest-tilemap_353
+  - first:
+      213: -5118210971544442695
+    second: forest-tilemap_354
+  - first:
+      213: -6200189003391614664
+    second: forest-tilemap_355
+  - first:
+      213: 8913744605829862062
+    second: forest-tilemap_356
+  - first:
+      213: 2544426234281157005
+    second: forest-tilemap_357
+  - first:
+      213: 5418664470296102554
+    second: forest-tilemap_358
+  - first:
+      213: 1723501429136001897
+    second: forest-tilemap_359
+  - first:
+      213: -411186523359060861
+    second: forest-tilemap_360
+  - first:
+      213: 6228096153610096820
+    second: forest-tilemap_361
+  - first:
+      213: -1982647077423289930
+    second: forest-tilemap_362
+  - first:
+      213: 4840578241161718515
+    second: forest-tilemap_363
+  - first:
+      213: -6827644562807624011
+    second: forest-tilemap_364
+  - first:
+      213: 5272214943203760643
+    second: forest-tilemap_365
+  - first:
+      213: 5943851669674986913
+    second: forest-tilemap_366
+  - first:
+      213: 5042679161487489137
+    second: forest-tilemap_367
+  - first:
+      213: -5508942172382417315
+    second: forest-tilemap_368
+  - first:
+      213: -302076280377667975
+    second: forest-tilemap_369
+  - first:
+      213: -3021011443738693034
+    second: forest-tilemap_370
+  - first:
+      213: 7594928416448159204
+    second: forest-tilemap_371
+  - first:
+      213: -496770649157648792
+    second: forest-tilemap_372
+  - first:
+      213: 1608062425390050402
+    second: forest-tilemap_373
+  - first:
+      213: 6210653615529301688
+    second: forest-tilemap_374
+  - first:
+      213: 6632259121570355865
+    second: forest-tilemap_375
+  - first:
+      213: 5427606984449112029
+    second: forest-tilemap_376
+  - first:
+      213: 7332733444770850826
+    second: forest-tilemap_377
+  - first:
+      213: -5290561272967698886
+    second: forest-tilemap_378
+  - first:
+      213: -5710500127252755394
+    second: forest-tilemap_379
+  - first:
+      213: 8854465961359855093
+    second: forest-tilemap_380
+  - first:
+      213: 3921509131195307512
+    second: forest-tilemap_381
+  - first:
+      213: -3208904657033411850
+    second: forest-tilemap_382
+  - first:
+      213: -7779771319552324725
+    second: forest-tilemap_383
+  - first:
+      213: 7159857440824686484
+    second: forest-tilemap_384
+  - first:
+      213: -7976787257034747773
+    second: forest-tilemap_385
+  - first:
+      213: 6316410716659336818
+    second: forest-tilemap_386
+  - first:
+      213: 5430199062314432899
+    second: forest-tilemap_387
+  - first:
+      213: -5046796294638883060
+    second: forest-tilemap_388
+  - first:
+      213: 4840364196647872858
+    second: forest-tilemap_389
+  - first:
+      213: 3771459574109829842
+    second: forest-tilemap_390
+  - first:
+      213: 2691576187288957641
+    second: forest-tilemap_391
+  - first:
+      213: -8958327601767839188
+    second: forest-tilemap_392
+  - first:
+      213: 5192569337538387484
+    second: forest-tilemap_393
+  - first:
+      213: -221648670920449957
+    second: forest-tilemap_394
+  - first:
+      213: -3690027072570365905
+    second: forest-tilemap_395
+  - first:
+      213: 8328264515221177480
+    second: forest-tilemap_396
+  - first:
+      213: -3992163778546047614
+    second: forest-tilemap_397
+  - first:
+      213: -9135654316254103808
+    second: forest-tilemap_398
+  - first:
+      213: -807916677405346939
+    second: forest-tilemap_399
+  - first:
+      213: -6304277626261380909
+    second: forest-tilemap_400
+  - first:
+      213: -2850682109117597248
+    second: forest-tilemap_401
+  - first:
+      213: 5712855484029445157
+    second: forest-tilemap_402
+  - first:
+      213: -2122908716487961756
+    second: forest-tilemap_403
+  - first:
+      213: 809750449302391240
+    second: forest-tilemap_404
+  - first:
+      213: 6929628056760619302
+    second: forest-tilemap_405
+  - first:
+      213: -553275283285164095
+    second: forest-tilemap_406
+  - first:
+      213: -5814815160217936923
+    second: forest-tilemap_407
+  - first:
+      213: 7722224613593956723
+    second: forest-tilemap_408
+  - first:
+      213: 6089615078715165194
+    second: forest-tilemap_409
+  - first:
+      213: -3354061707945220177
+    second: forest-tilemap_410
+  - first:
+      213: -283748826680676511
+    second: forest-tilemap_411
+  - first:
+      213: 7418325194692941595
+    second: forest-tilemap_412
+  - first:
+      213: -2197828354442913905
+    second: forest-tilemap_413
+  - first:
+      213: 8577882400265690317
+    second: forest-tilemap_414
+  - first:
+      213: 7970508632060584246
+    second: forest-tilemap_415
+  - first:
+      213: 5167115290269079140
+    second: forest-tilemap_416
+  - first:
+      213: 8203802744771805098
+    second: forest-tilemap_417
+  - first:
+      213: 2052362976401495431
+    second: forest-tilemap_418
+  - first:
+      213: -4944872958380059604
+    second: forest-tilemap_419
+  - first:
+      213: -4931428272140001472
+    second: forest-tilemap_420
+  - first:
+      213: -6465529593389883803
+    second: forest-tilemap_421
+  - first:
+      213: 6716990655646903931
+    second: forest-tilemap_422
+  - first:
+      213: -7898454920897914160
+    second: forest-tilemap_423
+  - first:
+      213: 1230003306100702606
+    second: forest-tilemap_424
+  - first:
+      213: -8338070509450446965
+    second: forest-tilemap_425
+  - first:
+      213: -1260598939896033467
+    second: forest-tilemap_426
+  - first:
+      213: 5260567416494906325
+    second: forest-tilemap_427
+  - first:
+      213: 5301874266986512566
+    second: forest-tilemap_428
+  - first:
+      213: 9080482439874448318
+    second: forest-tilemap_429
+  - first:
+      213: -3645183926127264557
+    second: forest-tilemap_430
+  - first:
+      213: -8016335292996052551
+    second: forest-tilemap_431
+  - first:
+      213: 813043446390103811
+    second: forest-tilemap_432
+  - first:
+      213: 1722883893535178483
+    second: forest-tilemap_433
+  - first:
+      213: 8076411236283659909
+    second: forest-tilemap_434
+  - first:
+      213: -7286988403653277900
+    second: forest-tilemap_435
+  - first:
+      213: -3964260043361712384
+    second: forest-tilemap_436
+  - first:
+      213: 2270509044587347445
+    second: forest-tilemap_437
+  - first:
+      213: -189957879383156859
+    second: forest-tilemap_438
+  - first:
+      213: -3466826466756731283
+    second: forest-tilemap_439
+  - first:
+      213: 1103803761518549504
+    second: forest-tilemap_440
+  - first:
+      213: -6091347990934829306
+    second: forest-tilemap_441
+  - first:
+      213: -4599148789384575365
+    second: forest-tilemap_442
+  - first:
+      213: 5950494768573049531
+    second: forest-tilemap_443
+  - first:
+      213: 4188376261829714641
+    second: forest-tilemap_444
+  - first:
+      213: 7165929647219315412
+    second: forest-tilemap_445
+  - first:
+      213: -6331513324931812104
+    second: forest-tilemap_446
+  - first:
+      213: 6694542297898171603
+    second: forest-tilemap_447
+  - first:
+      213: 1661771342700598567
+    second: forest-tilemap_448
+  - first:
+      213: -2596297873847685528
+    second: forest-tilemap_449
+  - first:
+      213: -8032438757250482132
+    second: forest-tilemap_450
+  - first:
+      213: -7503962312737996844
+    second: forest-tilemap_451
+  - first:
+      213: 6788797148649105211
+    second: forest-tilemap_452
+  - first:
+      213: 2061644055154104482
+    second: forest-tilemap_453
+  - first:
+      213: -501679973697508276
+    second: forest-tilemap_454
+  - first:
+      213: 6324983342761559567
+    second: forest-tilemap_455
+  - first:
+      213: -7986347097794500656
+    second: forest-tilemap_456
+  - first:
+      213: -4096562184123404152
+    second: forest-tilemap_457
+  - first:
+      213: -3253793476554073526
+    second: forest-tilemap_458
+  - first:
+      213: -5450464387281878713
+    second: forest-tilemap_459
+  - first:
+      213: -6982836730842942660
+    second: forest-tilemap_460
+  - first:
+      213: -4668018289251026459
+    second: forest-tilemap_461
+  - first:
+      213: 2799298598497541793
+    second: forest-tilemap_462
+  - first:
+      213: -7728465235010549916
+    second: forest-tilemap_463
+  - first:
+      213: -8568763713530508301
+    second: forest-tilemap_464
+  - first:
+      213: 874004299622146377
+    second: forest-tilemap_465
+  - first:
+      213: 2708495330841562520
+    second: forest-tilemap_466
+  - first:
+      213: 4484230309674399442
+    second: forest-tilemap_467
+  - first:
+      213: -7590860518272558189
+    second: forest-tilemap_468
+  - first:
+      213: -3315001254767012662
+    second: forest-tilemap_469
+  - first:
+      213: -8817603310483528406
+    second: forest-tilemap_470
+  - first:
+      213: 3426991154072854794
+    second: forest-tilemap_471
+  - first:
+      213: 4733464705764841330
+    second: forest-tilemap_472
+  - first:
+      213: 5415298606959851839
+    second: forest-tilemap_473
+  - first:
+      213: -52247825402070861
+    second: forest-tilemap_474
+  - first:
+      213: 5869930721708086821
+    second: forest-tilemap_475
+  - first:
+      213: 2950644961160054904
+    second: forest-tilemap_476
+  - first:
+      213: 3360185206131342989
+    second: forest-tilemap_477
+  - first:
+      213: 940390381629000423
+    second: forest-tilemap_478
+  - first:
+      213: 2720569802223653572
+    second: forest-tilemap_479
+  - first:
+      213: 3899025242452512290
+    second: forest-tilemap_480
+  - first:
+      213: -3309092147954272624
+    second: forest-tilemap_481
+  - first:
+      213: -7053121567472255406
+    second: forest-tilemap_482
+  - first:
+      213: -8461196286550135516
+    second: forest-tilemap_483
+  - first:
+      213: 6518117673694174576
+    second: forest-tilemap_484
+  - first:
+      213: -4968537437963172690
+    second: forest-tilemap_485
+  - first:
+      213: 981592314120715264
+    second: forest-tilemap_486
+  - first:
+      213: 7481450768324807680
+    second: forest-tilemap_487
+  - first:
+      213: 8856486778043255665
+    second: forest-tilemap_488
+  - first:
+      213: -1739785544123835099
+    second: forest-tilemap_489
+  - first:
+      213: -846522191529693833
+    second: forest-tilemap_490
+  - first:
+      213: -1054985708682999360
+    second: forest-tilemap_491
+  - first:
+      213: -6576244450224624312
+    second: forest-tilemap_492
+  - first:
+      213: -7873354355757850037
+    second: forest-tilemap_493
+  - first:
+      213: -4311506494599115219
+    second: forest-tilemap_494
+  - first:
+      213: -4406839077185044029
+    second: forest-tilemap_495
+  - first:
+      213: -8460714233630063653
+    second: forest-tilemap_496
+  - first:
+      213: 4020317546926425945
+    second: forest-tilemap_497
+  - first:
+      213: -4214671303872999347
+    second: forest-tilemap_498
+  - first:
+      213: -2836593135343839674
+    second: forest-tilemap_499
+  - first:
+      213: 411100597325728597
+    second: forest-tilemap_500
+  - first:
+      213: -3973264009913889077
+    second: forest-tilemap_501
+  - first:
+      213: -4399771911963364595
+    second: forest-tilemap_502
+  - first:
+      213: -4807716319161122320
+    second: forest-tilemap_503
+  - first:
+      213: -7284052661826978549
+    second: forest-tilemap_504
+  - first:
+      213: -3903497818939956896
+    second: forest-tilemap_505
+  - first:
+      213: -778813235355722951
+    second: forest-tilemap_506
+  - first:
+      213: -7979274881382798397
+    second: forest-tilemap_507
+  - first:
+      213: -7383053606102611450
+    second: forest-tilemap_508
+  - first:
+      213: 702289199775737114
+    second: forest-tilemap_509
+  - first:
+      213: -6315845435349384657
+    second: forest-tilemap_510
+  - first:
+      213: -3111126592061761247
+    second: forest-tilemap_511
+  - first:
+      213: 5335948698885114786
+    second: forest-tilemap_512
+  - first:
+      213: 8105731040431073448
+    second: forest-tilemap_513
+  - first:
+      213: 3695398001973339550
+    second: forest-tilemap_514
+  - first:
+      213: 3994792513659326274
+    second: forest-tilemap_515
+  - first:
+      213: 1965334012029107996
+    second: forest-tilemap_516
+  - first:
+      213: -115569734218340523
+    second: forest-tilemap_517
+  - first:
+      213: 2241806132985870796
+    second: forest-tilemap_518
+  - first:
+      213: -5615466434408802483
+    second: forest-tilemap_519
+  - first:
+      213: -6644905487549050306
+    second: forest-tilemap_520
+  - first:
+      213: -8752514768179125561
+    second: forest-tilemap_521
+  - first:
+      213: 1663010818943137315
+    second: forest-tilemap_522
+  - first:
+      213: 5615328709565462234
+    second: forest-tilemap_523
+  - first:
+      213: -6855956275854442177
+    second: forest-tilemap_524
+  - first:
+      213: 4066781136696627631
+    second: forest-tilemap_525
+  - first:
+      213: -1180720033204976343
+    second: forest-tilemap_526
+  - first:
+      213: 5683046265465300092
+    second: forest-tilemap_527
+  - first:
+      213: 1059785825253828952
+    second: forest-tilemap_528
+  - first:
+      213: -8889168537219412285
+    second: forest-tilemap_529
+  - first:
+      213: -4875622818663524568
+    second: forest-tilemap_530
+  - first:
+      213: 5918986584351477121
+    second: forest-tilemap_531
+  - first:
+      213: -6179191763419020068
+    second: forest-tilemap_532
+  - first:
+      213: -5216467824816973191
+    second: forest-tilemap_533
+  - first:
+      213: -8163477261713468327
+    second: forest-tilemap_534
+  - first:
+      213: -7118409941814662330
+    second: forest-tilemap_535
+  - first:
+      213: 7138812083023026853
+    second: forest-tilemap_536
+  - first:
+      213: -8841012797376359033
+    second: forest-tilemap_537
+  - first:
+      213: 8724985359499548838
+    second: forest-tilemap_538
+  - first:
+      213: -6044361990466945101
+    second: forest-tilemap_539
+  - first:
+      213: -4485382349446100830
+    second: forest-tilemap_540
+  - first:
+      213: 1108326522106508878
+    second: forest-tilemap_541
+  - first:
+      213: 4798973249267359657
+    second: forest-tilemap_542
+  - first:
+      213: 3493401646398551339
+    second: forest-tilemap_543
+  - first:
+      213: -7892011941615862649
+    second: forest-tilemap_544
+  - first:
+      213: -1423956376037770380
+    second: forest-tilemap_545
+  - first:
+      213: 3396578793201179585
+    second: forest-tilemap_546
+  - first:
+      213: 8504727692244231385
+    second: forest-tilemap_547
+  - first:
+      213: -2584494658738169589
+    second: forest-tilemap_548
+  - first:
+      213: 2028182502100062928
+    second: forest-tilemap_549
+  - first:
+      213: -9034202442245768236
+    second: forest-tilemap_550
+  - first:
+      213: -4560809123695825988
+    second: forest-tilemap_551
+  - first:
+      213: -3459036995782949359
+    second: forest-tilemap_552
+  - first:
+      213: -7056577554848133257
+    second: forest-tilemap_553
+  - first:
+      213: -8924239679552690459
+    second: forest-tilemap_554
+  - first:
+      213: 3573033225401737802
+    second: forest-tilemap_555
+  - first:
+      213: -7774971462284290151
+    second: forest-tilemap_556
+  - first:
+      213: -8321344480909142703
+    second: forest-tilemap_557
+  - first:
+      213: -8289862895281130178
+    second: forest-tilemap_558
+  - first:
+      213: -4456422148854600489
+    second: forest-tilemap_559
+  - first:
+      213: 7540417163482711833
+    second: forest-tilemap_560
+  - first:
+      213: -739534921260323461
+    second: forest-tilemap_561
+  - first:
+      213: -6393320126280782394
+    second: forest-tilemap_562
+  - first:
+      213: 4361439513592675711
+    second: forest-tilemap_563
+  - first:
+      213: 4084906735600270833
+    second: forest-tilemap_564
+  - first:
+      213: -8130377265775091060
+    second: forest-tilemap_565
+  - first:
+      213: 1539987066107401662
+    second: forest-tilemap_566
+  - first:
+      213: 4805414749042171194
+    second: forest-tilemap_567
+  - first:
+      213: -7892283887271102332
+    second: forest-tilemap_568
+  - first:
+      213: -3193723762468765780
+    second: forest-tilemap_569
+  - first:
+      213: -3648192193495014472
+    second: forest-tilemap_570
+  - first:
+      213: -4663153634943412169
+    second: forest-tilemap_571
+  - first:
+      213: 4745995973393928604
+    second: forest-tilemap_572
+  - first:
+      213: -5176055819187485175
+    second: forest-tilemap_573
+  - first:
+      213: -1728950917802329226
+    second: forest-tilemap_574
+  - first:
+      213: 4052571899928166243
+    second: forest-tilemap_575
+  - first:
+      213: -4490911244833432686
+    second: forest-tilemap_576
+  - first:
+      213: -8947119090909243603
+    second: forest-tilemap_577
+  - first:
+      213: 3791444342530528520
+    second: forest-tilemap_578
+  - first:
+      213: -7312160977489878460
+    second: forest-tilemap_579
+  - first:
+      213: -1448547549704019624
+    second: forest-tilemap_580
+  - first:
+      213: -350094211226796970
+    second: forest-tilemap_581
+  - first:
+      213: 6192116821263489436
+    second: forest-tilemap_582
+  - first:
+      213: -1274834559606126383
+    second: forest-tilemap_583
+  - first:
+      213: 7480407500082007665
+    second: forest-tilemap_584
+  - first:
+      213: -6990022529339077129
+    second: forest-tilemap_585
+  - first:
+      213: -9053179625819012970
+    second: forest-tilemap_586
+  - first:
+      213: -8655617047459717953
+    second: forest-tilemap_587
+  - first:
+      213: -120182649040477783
+    second: forest-tilemap_588
+  - first:
+      213: 8740978337571627473
+    second: forest-tilemap_589
+  - first:
+      213: 7988569918781778156
+    second: forest-tilemap_590
+  - first:
+      213: 5591464021063064288
+    second: forest-tilemap_591
+  - first:
+      213: 7568505986212999718
+    second: forest-tilemap_592
+  - first:
+      213: -3344350575622408315
+    second: forest-tilemap_593
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: forest-tilemap_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18b309ab554b1cf0800000000000000
+      internalID: -280554291800590305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92df474620e9a98e0800000000000000
+      internalID: -1685861377384317655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_36
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51679ef2fe5da48a0800000000000000
+      internalID: -6320003903783340523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_38
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123333b6d18cdf250800000000000000
+      internalID: 5980155908896011041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_40
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0df77dab578f5d0800000000000000
+      internalID: -3028541304066813762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_42
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04db8380edc7dd30800000000000000
+      internalID: 4456256720469742607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_44
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12a0b0d6a22aafc0800000000000000
+      internalID: -3482933261956505061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_46
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0316725ef1ac80a0800000000000000
+      internalID: -6877944417224355061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_48
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11dc630bf96941d0800000000000000
+      internalID: -3366042719667564259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_50
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c85b68f69e63f40800000000000000
+      internalID: 5708006242949368907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_52
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d55e6cf966f0300800000000000000
+      internalID: 220507743187197334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_54
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99258aa14e2ec4fc0800000000000000
+      internalID: -3509180540300799335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_56
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758a2f55dfd471fb0800000000000000
+      internalID: -4677183937536939945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_58
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d885e22df3776b0800000000000000
+      internalID: -5298696264624861866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_60
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf9902675a7a8910800000000000000
+      internalID: 1840417913459810229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_94
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8c170e077982b90800000000000000
+      internalID: -7266391487704610623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_96
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37427276267dc77d0800000000000000
+      internalID: -2919221640805538701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_98
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3a5369795967c20800000000000000
+      internalID: 3203912663213384621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_100
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfbc7dd7788daef0800000000000000
+      internalID: -95269968706486334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_102
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab493b97843c01150800000000000000
+      internalID: 5841383432746407098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_104
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc19482173b9f4290800000000000000
+      internalID: -7903928160175746611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_106
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac022b0c0d497ae0800000000000000
+      internalID: -1551123882530698073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_108
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e1c643cbfabfb90800000000000000
+      internalID: -7206973555808133549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_110
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d163a44e56377b140800000000000000
+      internalID: 4735380414662325789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_112
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaf3d2dd62c246c0800000000000000
+      internalID: -4160549328792585556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_114
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb0daf8600193ca0800000000000000
+      internalID: -6036776205147108414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_116
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436d85718f93e7e90800000000000000
+      internalID: -7026114630945024460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_118
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9301313ae6de1470800000000000000
+      internalID: 8367361459036947357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_120
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff930000d7b1c480800000000000000
+      internalID: -8880614886216589325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_122
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887055e0115cde750800000000000000
+      internalID: 6335936927825725320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_156
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b64cf7a350092a0800000000000000
+      internalID: -6732875694109070550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_158
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2474654db73e8f9a0800000000000000
+      internalID: -6198954766092581054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_160
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac8dccf10e389250800000000000000
+      internalID: 5951575085827329185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_162
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb35b7f9c8e341400800000000000000
+      internalID: 293928649377928127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_164
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84cd6485936f11a0800000000000000
+      internalID: -6836636215502060406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_166
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5077db8fa742b8c90800000000000000
+      internalID: -7166594271452236027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_168
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5222add27751765d0800000000000000
+      internalID: -3069461019415141851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_170
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dd7dbe024688ed0800000000000000
+      internalID: -2411567507898376866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_172
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c86d2f90ad6fda0800000000000000
+      internalID: -5911297724613489545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_174
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0454ea3d0e896d0800000000000000
+      internalID: -2983387553366458159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_176
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f1959cff8e21300800000000000000
+      internalID: 221495516986941315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_178
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57075f4afba354fa0800000000000000
+      internalID: -5817178748898414475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_180
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c495d2d49388010800000000000000
+      internalID: 1191265105075588146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_182
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05f9eacbe94bcfd0800000000000000
+      internalID: -2320679905908886259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_184
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806bdf4fbf7efd1d0800000000000000
+      internalID: -3323682930643061240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_218
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3004de9023f2860800000000000000
+      internalID: 7507274122066396124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_220
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b4c0016c4d6bb70800000000000000
+      internalID: 8914546459564329866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_222
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa05b92d77ab895e0800000000000000
+      internalID: -1902565818766765905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_224
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31931c6e327f243b0800000000000000
+      internalID: -5529585658890209005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_226
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef663024ad07bb320800000000000000
+      internalID: 2574775694685071102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_228
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7857762ab447d3eb0800000000000000
+      internalID: -4738503364727835257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_230
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bc0c4827f339650800000000000000
+      internalID: 6238399669924318052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_232
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3083afd41654c00800000000000000
+      internalID: 884219889386521545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_234
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5603720e2bcf7b0800000000000000
+      internalID: -5189075994837752403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_236
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10cbe4220fc178f0800000000000000
+      internalID: -544426471818805221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_238
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005da19b094566b20800000000000000
+      internalID: 3127279971812955392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_240
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d7f403cbb7ca8a0800000000000000
+      internalID: -6292518531148841716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_242
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb3765c0be18bd70800000000000000
+      internalID: 9059024395030707133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_244
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983ed6e7be2388200800000000000000
+      internalID: 182451771928339337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_246
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104cfdf63d91f1540800000000000000
+      internalID: 4980728108800787457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_278
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c9f804ad0bd60f0800000000000000
+      internalID: -1122046280712872883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_280
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9dbfcc8d35f94a60800000000000000
+      internalID: 7658922286024474014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_282
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de621c477ebabff10800000000000000
+      internalID: 2304624644914751213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_284
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71b9cfa1cd3d87d0800000000000000
+      internalID: -2914605481751629443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_286
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee84406f5b9b6c940800000000000000
+      internalID: 5316140601325144302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_288
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0b7442438a390c0800000000000000
+      internalID: -4570124254950477633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_290
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43aa48ffeb1a62500800000000000000
+      internalID: 371161861007387188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_292
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09fa43d8b8cb5230800000000000000
+      internalID: 3628714620921510158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_294
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35be2792573ef6bc0800000000000000
+      internalID: -3787558669249221805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_296
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f380bdf08c9e9f0800000000000000
+      internalID: -438599518267097343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_298
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb31f9f947204ec50800000000000000
+      internalID: 6693477646096864190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_300
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159b7bca718df5d30800000000000000
+      internalID: 4422490955294685521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_302
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf264c3f495e90a0800000000000000
+      internalID: -6872957784472277053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_304
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420e65de1b99b6030800000000000000
+      internalID: 3489051325798735908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_306
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5d604d670936f20800000000000000
+      internalID: 3414731782514726354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_338
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcf4d8f5b1d359d0800000000000000
+      internalID: -2786653164918211368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_340
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26fdb06283cf4370800000000000000
+      internalID: 8309074802258081325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_342
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194d1016f8f45b6c0800000000000000
+      internalID: -4128306006188764015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_344
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d47eb81bbb085600800000000000000
+      internalID: 457128260380030161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_346
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9015604debacfd320800000000000000
+      internalID: 2585007632083734793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_348
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7fd15def64fd100800000000000000
+      internalID: 134904574155552739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_350
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057cb2f2a0ce282a0800000000000000
+      internalID: -6736562564107614384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_352
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fff6e0f2d8e2110800000000000000
+      internalID: 1238082180818665364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_353
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40107e751fa99110800000000000000
+      internalID: 1268237276931952716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_355
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8314f8093f084f9a0800000000000000
+      internalID: -6200189003391614664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_357
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81638bdd2e9f4320800000000000000
+      internalID: 2544426234281157005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_359
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b87851b6b1be710800000000000000
+      internalID: 1723501429136001897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_361
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b018ee2474ae6650800000000000000
+      internalID: 6228096153610096820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_363
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3faedeb83403d2340800000000000000
+      internalID: 4840578241161718515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_383
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bcf403433b80490800000000000000
+      internalID: -7779771319552324725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_385
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380d497a042cc4190800000000000000
+      internalID: -7976787257034747773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_387
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38939e8d641fb5b40800000000000000
+      internalID: 5430199062314432899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_389
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5927bc679d6c2340800000000000000
+      internalID: 4840364196647872858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_390
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2daff87208ae65430800000000000000
+      internalID: 3771459574109829842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_391
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2324128466a5520800000000000000
+      internalID: 2691576187288957641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_393
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e9f831d46bf0840800000000000000
+      internalID: 5192569337538387484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_395
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f286ed79de36accc0800000000000000
+      internalID: -3690027072570365905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_397
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285e49ed13cf898c0800000000000000
+      internalID: -3992163778546047614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_398
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007f8e85dc2a73180800000000000000
+      internalID: -9135654316254103808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_399
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583f32bff04b9c4f0800000000000000
+      internalID: -807916677405346939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_401
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9fb7ea9b75078d0800000000000000
+      internalID: -2850682109117597248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_403
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463972f15c9e982e0800000000000000
+      internalID: -2122908716487961756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_420
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fd6c34d1c009bb0800000000000000
+      internalID: -4931428272140001472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_422
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ea375c96b873d50800000000000000
+      internalID: 6716990655646903931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_424
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d30b47d79d11110800000000000000
+      internalID: 1230003306100702606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_431
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b91b8cf58140c090800000000000000
+      internalID: -8016335292996052551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_433
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fef76fd5c9e8e710800000000000000
+      internalID: 1722883893535178483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_435
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4370bdda7aa6fda90800000000000000
+      internalID: -7286988403653277900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_444
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2e908e40a102a30800000000000000
+      internalID: 4188376261829714641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_446
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f479c04d22f128a0800000000000000
+      internalID: -6331513324931812104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_448
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725d7935b3ccf0710800000000000000
+      internalID: 1661771342700598567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_450
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20410a028b078090800000000000000
+      internalID: -8032438757250482132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_452
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b372a61c907a63e50800000000000000
+      internalID: 6788797148649105211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_454
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c25d0d8bca909f0800000000000000
+      internalID: -501679973697508276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_456
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7acf6c0abca2190800000000000000
+      internalID: -7986347097794500656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_458
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ad289821438d2d0800000000000000
+      internalID: -3253793476554073526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_461
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e97a20291ed73fb0800000000000000
+      internalID: -4668018289251026459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_463
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4678d30e0d9feb490800000000000000
+      internalID: -7728465235010549916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_465
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9416423a746112c00800000000000000
+      internalID: 874004299622146377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_479
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2123822d761c520800000000000000
+      internalID: 2720569802223653572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_488
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b463b0dcf88ea70800000000000000
+      internalID: 8856486778043255665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_490
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d23674d8c8044f0800000000000000
+      internalID: -846522191529693833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_492
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d2a34d38c7cb4a0800000000000000
+      internalID: -6576244450224624312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_494
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e41aebfa37a24c0800000000000000
+      internalID: -4311506494599115219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_496
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd383663b31859a80800000000000000
+      internalID: -8460714233630063653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_498
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d401e9787ca7285c0800000000000000
+      internalID: -4214671303872999347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_502
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03beaec1ced0f2c0800000000000000
+      internalID: -4399771911963364595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_504
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d709652b8d9ea90800000000000000
+      internalID: -7284052661826978549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_506
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93bdf302d791135f0800000000000000
+      internalID: -778813235355722951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_515
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fcd0830aa507730800000000000000
+      internalID: 3994792513659326274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_517
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557212560f9656ef0800000000000000
+      internalID: -115569734218340523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_519
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d471fe8a70bd112b0800000000000000
+      internalID: -5615466434408802483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_528
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859af34d79d15be00800000000000000
+      internalID: 1059785825253828952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_530
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82795cae0ee465cb0800000000000000
+      internalID: -4875622818663524568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_532
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4c36674d91f3aa0800000000000000
+      internalID: -6179191763419020068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_534
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9541793bea085be80800000000000000
+      internalID: -8163477261713468327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_536
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa9ad634c7221360800000000000000
+      internalID: 7138812083023026853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_538
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8547f15ff551970800000000000000
+      internalID: 8724985359499548838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_546
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb9164aa62132f20800000000000000
+      internalID: 3396578793201179585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_548
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0954061dc7022cd0800000000000000
+      internalID: -2584494658738169589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_550
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db79f87eb010a280800000000000000
+      internalID: -9034202442245768236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_554
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6e0d94b4bb62480800000000000000
+      internalID: -8924239679552690459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_570
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3606a67840f5dc0800000000000000
+      internalID: -3648192193495014472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_572
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c915493413a2dd140800000000000000
+      internalID: 4745995973393928604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_574
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b7e46fc488108e0800000000000000
+      internalID: -1728950917802329226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_576
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b55e544041da1c0800000000000000
+      internalID: -4490911244833432686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_578
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8055236aa8aed9430800000000000000
+      internalID: 3791444342530528520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_580
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85121a3ada9b5ebe0800000000000000
+      internalID: -1448547549704019624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest-tilemap_581
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cf7e57b27342bf0800000000000000
+      internalID: -350094211226796970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
