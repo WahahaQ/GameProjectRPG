@@ -19,4 +19,6 @@
 	public const string BUTTON_NAME_NEXT_WEAPON = "NextWeapon";
 	public const string BUTTON_NAME_PAUSE_MENU = "Pause Menu";
 	public const string BUTTON_NAME_CANCEL = "Cancel";
+
+	public const int DEFAULT_BURST_ATTACK_COUNT = 10;
 }

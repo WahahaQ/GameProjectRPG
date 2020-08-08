@@ -6,18 +6,18 @@ public class PlayerMovement : MonoBehaviour
 #pragma warning disable 0649
 
 	[SerializeField]
-	private float movementSpeed = 5f;		// Player movement speed
+	private float movementSpeed = 5f;
 
-	private SpriteRenderer spriteRenderer;	// Player sprite renderer component
-	private Rigidbody2D playerRigidbody;	// Player rigidbody component
+	private SpriteRenderer spriteRenderer;
+	private Rigidbody2D playerRigidbody;
 
 #pragma warning restore 0649
 
 	[System.NonSerialized]
-	public Directions playerFacing;			// Represents the current player facing direction
+	public Directions playerFacing;
 
-	private Animator animatorComponent;		// Player animator component
-	private Vector2 movementVector;			// Player movement vector
+	private Animator animatorComponent;
+	private Vector2 movementVector;
 
 	public enum Directions
 	{

@@ -84,7 +84,7 @@ public class Projectile : MonoBehaviour
 					}
 					else
 					{
-						col.gameObject.GetComponent<King>().TakeDamage(damage);
+						col.gameObject.GetComponent<FinalBoss>().TakeDamage(damage);
 					}
 
 					DestroyProjectile();
@@ -106,7 +106,7 @@ public class Projectile : MonoBehaviour
 		}
 		else
 		{
-			if (col.gameObject.CompareTag("PlayerHitbox"))
+			if (col.gameObject.CompareTag("PlayerHitbox") || col.gameObject.CompareTag("Player"))
 			{
 				Game.game.playerHealthController.TakeDamage(damage);
 				Destroy(gameObject);

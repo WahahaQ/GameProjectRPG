@@ -12,14 +12,15 @@ public class CameraFollow : MonoBehaviour
 
 	private Vector3 offset;
 
-
 	private void Start()
 	{
+		// Set the offset coordinates
 		offset = transform.position - objectToFollow.transform.position;
 	}
 
 	private void LateUpdate()
 	{
+		// Change camera position
 		transform.position = objectToFollow.transform.position + offset;
 	}
 }

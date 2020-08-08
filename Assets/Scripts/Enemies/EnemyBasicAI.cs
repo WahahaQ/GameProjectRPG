@@ -18,12 +18,12 @@ public class EnemyBasicAI : MonoBehaviour
 	[SerializeField]
 	private GameObject deathParticleEffect;
 
-	private Rigidbody2D enemyRigidbody;
-	private SpriteRenderer enemySpriteRenderer;
-
 #pragma warning restore 0649
 
+	private Rigidbody2D enemyRigidbody;
+	private SpriteRenderer enemySpriteRenderer;
 	public GameObject target;
+
 	public EnemyType type;
 	public enum EnemyType
 	{
@@ -33,8 +33,7 @@ public class EnemyBasicAI : MonoBehaviour
 	}
 
 	private float attackTimer;
-
-
+	
 	private void Start()
 	{
 		// Get enemy rigidbody component
@@ -48,20 +47,20 @@ public class EnemyBasicAI : MonoBehaviour
 	{
 		attackTimer += Time.deltaTime;
 
-		//If the enemy has a target...
 		if (target != null)
 		{
-			//Look at Target.
+			// Look at the target
 			Vector3 dir = transform.position - target.transform.position;
 			float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90;
 			transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-			//If the enemy is further then their attack range, chase the target.
+			// Chase the player if he's too far away
 			if (Vector3.Distance(transform.position, target.transform.position) > attackRange)
 			{
 				ChaseTarget();
 			}
-			//Otherwise attack.
+
+			// Otherwise attack
 			else
 			{
 				if (attackTimer >= attackRate)
@@ -71,62 +70,84 @@ public class EnemyBasicAI : MonoBehaviour
 				}
 			}
 		}
-		//Otherwise make the player the target.
 		else
 		{
 			if (Game.game.playerShootingBehaviour)
 			{
+				// Set the player as the target
 				target = Game.game.playerGameObject;
 			}
-			//If the player doesn't exist, freeze the enemy.
 			else
 			{
+				// Freeze enemies, if the player doesn't exist
 				enemyRigidbody.simulated = false;
 			}
 		}
 	}
 
-	//Called when the player attacks the enemy.
-	public void TakeDamage(int dmg)
-	{
-		if (health - dmg <= 0)
+	public void TakeDamage(int damage)
+	{ 
+		if (health - damage <= 0)
 		{
 			Die();
 		}
 		else
 		{
-			health -= dmg;
+			health -= damage;
 			StartCoroutine(DamageFlash());
 		}
 
-		Game.game.Shake(0.15f, 0.15f, 30.0f);
+		//Game.game.Shake(0.15f, 0.15f, 30.0f);	// Call the screen shake effect
 	}
 
-	//Move towards the target.
+	private IEnumerator DamageFlash()
+	{
+		// Flash sprite (set the sprite color to red for a small duration of time)
+		enemySpriteRenderer.color = Color.red;
+		yield return new WaitForSeconds(0.03f);
+		enemySpriteRenderer.color = Color.white;
+	}
+
+	private void Die()
+	{
+		// Destroy the enemy 
+		Game.game.curEnemies.Remove(gameObject);
+		GameObject pe = Instantiate(deathParticleEffect, transform.position, Quaternion.identity);
+		Destroy(pe, 2);
+		Destroy(gameObject);
+	}
+
 	private void ChaseTarget()
 	{
+		// Move towards the target
 		transform.position = Vector3.MoveTowards(transform.position, target.transform.position, movementSpeed * Time.deltaTime);
 	}
 
-	//If ranged enemy, shoot a projectile. If a melee enemy, hit the target.
 	private void Attack()
 	{
-		if (type == EnemyType.Archer || type == EnemyType.Mage)
+		/*
+			If ranged enemy - shoot a projectile.
+			Otherwise - hit the target with the melee attack.
+		*/
+			
+		switch (type)
 		{
-			Shoot();
-		}
-		else if (type == EnemyType.Knight)
-		{
-			Melee();
+			case EnemyType.Archer:
+			case EnemyType.Mage:
+				Shoot();
+				break;
+			case EnemyType.Knight:
+				Melee();
+				break;
 		}
 	}
 
-	//Spawns and shoots respectable projectile.
 	private void Shoot()
 	{
 		GameObject proj = Instantiate(projectilePrefab, transform.position + (transform.up * 0.7f), transform.rotation);
 		Projectile projScript = proj.GetComponent<Projectile>();
-
+		
+		// Set projectile's damage and shoot it forward
 		projScript.damage = damage;
 
 		if (type != EnemyType.Mage)
@@ -139,28 +160,11 @@ public class EnemyBasicAI : MonoBehaviour
 		}
 	}
 
-	//Damages the player, with small knockback.
 	private void Melee()
 	{
+		// Damage the player, with a small knockback
 		Game.game.playerHealthController.TakeDamage(damage);
 		enemyRigidbody.AddForce((target.transform.position - transform.position).normalized * -3 * Time.deltaTime);
-	}
-
-	//Called when taking damage. Flashes sprite red.
-	private IEnumerator DamageFlash()
-	{
-		enemySpriteRenderer.color = Color.red;
-		yield return new WaitForSeconds(0.03f);
-		enemySpriteRenderer.color = Color.white;
-	}
-
-	//Called when health reaches below 0. Destroys them.
-	private void Die()
-	{
-		Game.game.curEnemies.Remove(gameObject);
-		GameObject pe = Instantiate(deathParticleEffect, transform.position, Quaternion.identity);
-		Destroy(pe, 2);
-		Destroy(gameObject);
 	}
 }
 
