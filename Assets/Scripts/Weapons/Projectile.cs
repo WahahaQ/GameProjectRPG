@@ -82,10 +82,6 @@ public class Projectile : MonoBehaviour
 					{
 						col.gameObject.GetComponent<EnemyBasicAI>().TakeDamage(damage);
 					}
-					else
-					{
-						col.gameObject.GetComponent<FinalBoss>().TakeDamage(damage);
-					}
 
 					DestroyProjectile();
 

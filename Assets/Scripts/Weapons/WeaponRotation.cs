@@ -21,7 +21,7 @@ public class WeaponRotation : MonoBehaviour
 				
 		if (rotationZ < -90 || rotationZ > 90)
 		{
-			// Rotate transform (weapon)
+			// Rotate transform
 			if (playerGameObject.transform.eulerAngles.y == 0)
 			{
 				transform.localRotation = Quaternion.Euler(180, 0, -rotationZ);

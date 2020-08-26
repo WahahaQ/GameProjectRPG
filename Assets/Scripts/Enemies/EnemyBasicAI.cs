@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer))]
+[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
 public class EnemyBasicAI : MonoBehaviour
 {
 	public int health;
@@ -13,17 +13,21 @@ public class EnemyBasicAI : MonoBehaviour
 #pragma warning disable 0649
 
 	[SerializeField]
-	private GameObject projectilePrefab;
+	protected GameObject projectilePrefab;
 
 	[SerializeField]
-	private GameObject deathParticleEffect;
+	protected GameObject deathParticleEffect;
+
 
 #pragma warning restore 0649
 
-	private Rigidbody2D enemyRigidbody;
-	private SpriteRenderer enemySpriteRenderer;
-	public GameObject target;
+	protected Animator animatorComponent;
+	protected Rigidbody2D enemyRigidbody;
+	protected SpriteRenderer enemySpriteRenderer;
 
+	protected bool isDeathAnimationPlaying = false;
+
+	public GameObject target;
 	public EnemyType type;
 	public enum EnemyType
 	{
@@ -32,10 +36,13 @@ public class EnemyBasicAI : MonoBehaviour
 		Mage
 	}
 
-	private float attackTimer;
+	protected float attackTimer;
 	
 	private void Start()
 	{
+		// Get enemy animator component
+		animatorComponent = GetComponent<Animator>();
+
 		// Get enemy rigidbody component
 		enemyRigidbody = GetComponent<Rigidbody2D>();
 
@@ -43,19 +50,14 @@ public class EnemyBasicAI : MonoBehaviour
 		enemySpriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
-	private void Update()
+	protected void Update()
 	{
 		attackTimer += Time.deltaTime;
 
 		if (target != null)
 		{
-			// Look at the target
-			Vector3 dir = transform.position - target.transform.position;
-			float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90;
-			transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
 			// Chase the player if he's too far away
-			if (Vector3.Distance(transform.position, target.transform.position) > attackRange)
+			if (Vector3.Distance(transform.position, target.transform.position) > attackRange && !isDeathAnimationPlaying)
 			{
 				ChaseTarget();
 			}
@@ -85,6 +87,14 @@ public class EnemyBasicAI : MonoBehaviour
 		}
 	}
 
+	protected virtual void ChaseTarget()
+	{
+		// Move towards the target
+		transform.position = Vector3.MoveTowards(transform.position, target.transform.position, movementSpeed * Time.deltaTime);
+	}
+
+	#region TakeDamage
+
 	public void TakeDamage(int damage)
 	{ 
 		if (health - damage <= 0)
@@ -108,28 +118,35 @@ public class EnemyBasicAI : MonoBehaviour
 		enemySpriteRenderer.color = Color.white;
 	}
 
-	private void Die()
+	public virtual void Die()
 	{
-		// Destroy the enemy 
+		isDeathAnimationPlaying = true;
+		enemyRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
+		animatorComponent.SetBool("IsGoingToDie", true);
+	}
+
+	protected void DestroyGameObject()
+	{
 		Game.game.curEnemies.Remove(gameObject);
-		GameObject pe = Instantiate(deathParticleEffect, transform.position, Quaternion.identity);
-		Destroy(pe, 2);
 		Destroy(gameObject);
 	}
 
-	private void ChaseTarget()
-	{
-		// Move towards the target
-		transform.position = Vector3.MoveTowards(transform.position, target.transform.position, movementSpeed * Time.deltaTime);
-	}
+	#endregion
 
-	private void Attack()
+	#region Attack
+
+	protected virtual void Attack()
 	{
+		if (isDeathAnimationPlaying)
+		{
+			return;
+		}
+
 		/*
 			If ranged enemy - shoot a projectile.
 			Otherwise - hit the target with the melee attack.
 		*/
-			
+
 		switch (type)
 		{
 			case EnemyType.Archer:
@@ -142,7 +159,7 @@ public class EnemyBasicAI : MonoBehaviour
 		}
 	}
 
-	private void Shoot()
+	protected virtual void Shoot()
 	{
 		GameObject proj = Instantiate(projectilePrefab, transform.position + (transform.up * 0.7f), transform.rotation);
 		Projectile projScript = proj.GetComponent<Projectile>();
@@ -160,11 +177,13 @@ public class EnemyBasicAI : MonoBehaviour
 		}
 	}
 
-	private void Melee()
+	protected virtual void Melee()
 	{
 		// Damage the player, with a small knockback
 		Game.game.playerHealthController.TakeDamage(damage);
 		enemyRigidbody.AddForce((target.transform.position - transform.position).normalized * -3 * Time.deltaTime);
 	}
+
+	#endregion
 }
 
