@@ -15,6 +15,8 @@ public class HealthController : MonoBehaviour
 	
 	public void TakeDamage(int damage)
 	{
+		Game.game.healthSystemUI.DecreaseHealth(damage);
+
 		if (currentHealth - damage <= 0)
 		{
 			Die();
@@ -22,9 +24,8 @@ public class HealthController : MonoBehaviour
 		else
 		{
 			currentHealth -= damage;
-			//Game.game.Shake(0.1f, 0.1f, 50.0f);
 			//Game.game.userInterface.ShakeSlider(0.2f, 0.05f, 30.0f);
-			Game.game.userInterface.StartCoroutine("HealthDown", currentHealth);
+			//Game.game.userInterface.StartCoroutine("HealthDown", currentHealth);
 			animatorComponent.SetTrigger("OnTakeHitTrigger");
 			StartCoroutine(WaitForAnimation());
 		}

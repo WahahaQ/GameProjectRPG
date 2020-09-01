@@ -31,10 +31,11 @@ public class Game : MonoBehaviour
 	public GameObject kingPrefab;
 
 	public UI userInterface;
+	public HealthSystem healthSystemUI;
 	public GameObject playerGameObject;
 	public HealthController playerHealthController;
 	public ShootingBehaviour playerShootingBehaviour;
-
+	
 	private bool waveActive, canUpgrade;
 
 	private void Awake()
@@ -67,7 +68,6 @@ public class Game : MonoBehaviour
 				playerShootingBehaviour.damage += 5;
 				canUpgrade = false;
 				userInterface.upgradeText.gameObject.SetActive(false);
-				//game.Shake(0.15f, 0.15f, 30.0f);
 			}
 
 			if (Input.GetKeyDown(KeyCode.E))
@@ -75,7 +75,6 @@ public class Game : MonoBehaviour
 				playerShootingBehaviour.attackRate = 0.05f;
 				canUpgrade = false;
 				userInterface.upgradeText.gameObject.SetActive(false);
-				//game.Shake(0.15f, 0.15f, 30.0f);
 			}
 		}
 
@@ -91,28 +90,22 @@ public class Game : MonoBehaviour
 		// Count down at the start of the game
 		userInterface.startText.gameObject.SetActive(true);
 		yield return new WaitForSeconds(1);
-		userInterface.startText.text = "BEGINS IN\n<size=150>4</size>"; userInterface.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
-		//game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
+		userInterface.startText.text = "BEGINS IN\n<size=90>4</size>"; 
+		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
 		yield return new WaitForSeconds(1);
-		userInterface.startText.text = "BEGINS IN\n<size=150>3</size>"; userInterface.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
-		//game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
+		userInterface.startText.text = "BEGINS IN\n<size=100>3</size>"; 
+		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
 		yield return new WaitForSeconds(1);
-		userInterface.startText.text = "BEGINS IN\n<size=150>2</size>"; userInterface.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
-		//game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
+		userInterface.startText.text = "BEGINS IN\n<size=110>2</size>"; 
+		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
 		yield return new WaitForSeconds(1);
-		userInterface.startText.text = "BEGINS IN\n<size=150>1</size>"; userInterface.startText.rectTransform.localScale += new Vector3(0.15f, 0.15f, 0);
-		//game.Shake(0.1f, 0.1f, 30.0f); Camera.main.orthographicSize -= 0.2f;
+		userInterface.startText.text = "BEGINS IN\n<size=120>1</size>"; 
+		userInterface.startText.rectTransform.localScale += new Vector3(0.03f, 0.03f, 0);
 		yield return new WaitForSeconds(1);
 		userInterface.startText.gameObject.SetActive(false);
 		Camera.main.orthographicSize = 7;
 
 		NextWave();
-	}
-
-	public void Shake(float duration, float amount, float intensity)
-	{
-		// Shake the camera
-		StartCoroutine(ShakeCam(duration, amount, intensity));
 	}
 
 	public void EndGame()
@@ -210,7 +203,6 @@ public class Game : MonoBehaviour
 		// Show the end game screen
 		yield return new WaitForSeconds(2);
 		userInterface.endGameScreen.SetActive(true);
-		//game.Shake(0.1f, 0.1f, 50.0f);
 	}
 
 	private IEnumerator WinGameTimer()
@@ -218,35 +210,5 @@ public class Game : MonoBehaviour
 		gameDone = true;
 		yield return new WaitForSeconds(2);
 		userInterface.winScreen.SetActive(true);
-	}
-
-	private IEnumerator ShakeCam(float duration, float amount, float intensity)
-	{
-		float t = duration;
-		Vector3 originalPos = mainCamera.position;
-		Vector3 targetPos = Vector3.zero;
-
-		// Shake camera
-
-		while (t > 0.0f)
-		{
-			if (targetPos == Vector3.zero)
-			{
-				targetPos = Random.insideUnitCircle * amount;
-				targetPos = new Vector3(targetPos.x, targetPos.y, -10);
-			}
-
-			mainCamera.position = Vector3.Lerp(mainCamera.position, targetPos, intensity * Time.deltaTime);
-
-			if (Vector3.Distance(mainCamera.position, targetPos) < 0.02f)
-			{
-				targetPos = Vector3.zero;
-			}
-
-			t -= Time.deltaTime;
-			yield return null;
-		}
-
-		mainCamera.position = originalPos;
 	}
 }
