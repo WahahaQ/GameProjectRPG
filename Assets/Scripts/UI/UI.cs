@@ -5,11 +5,8 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-	public Text waveText;
-	public Text upgradeText;
-	public GameObject endGameScreen;
-	public GameObject winScreen;
-	public Text startText;
+	public Text startText, waveText, upgradeText;
+	public GameObject winScreen, endGameScreen;
 
 	private void Update()
 	{
@@ -30,23 +27,19 @@ public class UI : MonoBehaviour
 		}
 	}
 
-	//Called when the "Restart" button gets pressed. Reloads the level.
 	public void RestartButton()
 	{
 		SceneManager.LoadScene("Game");
-		//Application.LoadLevel(Application.loadedLevel);
 	}
 
-	//Called when the "Quit" button gets pressed. Quits the application.
 	public void QuitButton()
 	{
 		Application.Quit();
 	}
 
-	//Called when the next wave starts.
-	//Makes the wave text pop out a bit.
 	private IEnumerator NextWaveAnim()
 	{
+		//Makes the wave text pop out a bit
 		waveText.color = Color.red;
 
 		while (waveText.rectTransform.localScale.x < 1.15f)

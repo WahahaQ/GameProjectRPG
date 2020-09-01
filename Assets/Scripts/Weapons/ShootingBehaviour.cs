@@ -66,7 +66,7 @@ public class ShootingBehaviour : MonoBehaviour
 
 		// Set projectile's damage and shoot it forward
 		projectileScript.damage = damage;
-		projectileScript.rig.velocity = (mousePosition - transform.position).normalized * bulletSpeed;
+		projectileScript.projectileRigidbody.velocity = (mousePosition - transform.position).normalized * bulletSpeed;
 	}
 
 	private void DropBulletCase()

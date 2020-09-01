@@ -34,13 +34,9 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Start()
 	{
-		// Get player rigidbody component
+		// Get all of the components
 		playerRigidbody = GetComponent<Rigidbody2D>();
-
-		// Get player animator component
 		animatorComponent = GetComponent<Animator>();
-
-		// Get player sprite renderer component
 		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 

@@ -9,7 +9,6 @@ public class WeaponRotation : MonoBehaviour
 
 #pragma warning restore 0649
 
-
 	private void FixedUpdate()
 	{
 		// Get the difference between mouse coordinates and transform position

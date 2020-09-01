@@ -23,14 +23,14 @@ public class FinalBoss : MonoBehaviour
 	public float projectileSpeedWeapon1;
 	public float projectileSpeedWeapon2;
 
-	public float attackRange;
-
-#pragma warning disable 0649
-
-	[SerializeField]
+	// Weapons
 	public GameObject projectileWeaponPrefab1;
 	public GameObject projectileWeaponPrefab2;
 
+	public float attackRange;
+
+#pragma warning disable 0649
+	
 	[SerializeField]
 	private GameObject deathParticleEffect;
 
@@ -141,14 +141,12 @@ public class FinalBoss : MonoBehaviour
 			health -= damage;
 			StartCoroutine(DamageFlash());
 		}
-
-		//Game.game.Shake(0.15f, 0.15f, 30.0f);	// Call the screen shake effect
 	}
 
 	private IEnumerator BurstAttack()
 	{
 		// Burst a number of projectiles out
-		for (int x = 0; x < GameConstants.DEFAULT_BURST_ATTACK_COUNT; x++)
+		for (int x = 0; x < 10; x++)
 		{
 			ShootAndFollow();
 			yield return new WaitForSeconds(0.05f);
@@ -168,7 +166,7 @@ public class FinalBoss : MonoBehaviour
 
 		// Set projectile's damage and shoot it forward
 		projScript.damage = damageWeapon1;
-		projScript.rig.velocity = (target.transform.position - muzzleWeapon1.position).normalized * projectileSpeedWeapon1;
+		projScript.projectileRigidbody.velocity = (target.transform.position - muzzleWeapon1.position).normalized * projectileSpeedWeapon1;
 	}
 
 	private void ShootAndFollow()

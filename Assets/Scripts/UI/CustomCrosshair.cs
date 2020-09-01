@@ -6,7 +6,7 @@ public class CustomCrosshair : MonoBehaviour
 
 	void Start()
 	{
-		Cursor.visible = false;	// Hide hardware pointer at the start
+		Cursor.visible = false;		// Hide hardware pointer at the start
 	}
 
 	void Update()

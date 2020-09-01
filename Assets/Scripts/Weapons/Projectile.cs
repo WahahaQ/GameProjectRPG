@@ -2,22 +2,30 @@
 
 public class Projectile : MonoBehaviour
 {
-	public bool playerOwned; //Does the player own this projectile?
-	public bool hittable;
-	public bool followPlayer;
-	public float followSpeed;
 	public int damage;
-	public Rigidbody2D rig;
-	private GameObject player;
-	public Vector3 impactNormal;
-	public GameObject projectileDeathParticle;
+	public float followSpeed;
+	public bool hittable;
+	public bool playerOwned, followPlayer;
 
-	//Side Stepping
+	public Vector3 impactNormal;
+	public Rigidbody2D projectileRigidbody;
+
+#pragma warning disable 0649
+
+	[SerializeField]
+	private GameObject projectileDeathParticle;
+
+#pragma warning restore 0649
+
 	private bool stepLeft;
 	private float stepTimer;
+	private GameObject playerGameObject;
 
 	private void Start()
 	{
+		// Get all of the components
+		projectileRigidbody = GetComponent<Rigidbody2D>();
+
 		if (!followPlayer)
 			Destroy(gameObject, 3.0f);
 
@@ -30,16 +38,16 @@ public class Projectile : MonoBehaviour
 		//If the projectile follows the player, follow them.
 		if (followPlayer)
 		{
-			if (!player)
+			if (!playerGameObject)
 			{
 				if (Game.game.playerShootingBehaviour)
 				{
-					player = Game.game.playerGameObject;
+					playerGameObject = Game.game.playerGameObject;
 				}
 			}
 			else
 			{
-				transform.position = Vector3.MoveTowards(transform.position, player.transform.position, followSpeed * Time.deltaTime);
+				transform.position = Vector3.MoveTowards(transform.position, playerGameObject.transform.position, followSpeed * Time.deltaTime);
 			}
 		}
 

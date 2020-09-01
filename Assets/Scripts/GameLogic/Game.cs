@@ -90,17 +90,22 @@ public class Game : MonoBehaviour
 		// Count down at the start of the game
 		userInterface.startText.gameObject.SetActive(true);
 		yield return new WaitForSeconds(1);
+		
 		userInterface.startText.text = "BEGINS IN\n<size=90>4</size>"; 
 		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
 		yield return new WaitForSeconds(1);
+		
 		userInterface.startText.text = "BEGINS IN\n<size=100>3</size>"; 
 		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
 		yield return new WaitForSeconds(1);
+		
 		userInterface.startText.text = "BEGINS IN\n<size=110>2</size>"; 
 		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
 		yield return new WaitForSeconds(1);
+		
 		userInterface.startText.text = "BEGINS IN\n<size=120>1</size>"; 
 		userInterface.startText.rectTransform.localScale += new Vector3(0.03f, 0.03f, 0);
+		
 		yield return new WaitForSeconds(1);
 		userInterface.startText.gameObject.SetActive(false);
 		Camera.main.orthographicSize = 7;
@@ -131,7 +136,6 @@ public class Game : MonoBehaviour
 
 	private IEnumerator EnemySpawnLoop(Wave wave)
 	{
-		// If we're not spawning a boss, then spawn all the enemies
 		if (!wave.spawnBoss)
 		{
 			// Called for each enemy spawned

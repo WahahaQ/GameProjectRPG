@@ -40,13 +40,9 @@ public class EnemyBasicAI : MonoBehaviour
 	
 	private void Start()
 	{
-		// Get enemy animator component
+		// Get all of the components
 		animatorComponent = GetComponent<Animator>();
-
-		// Get enemy rigidbody component
 		enemyRigidbody = GetComponent<Rigidbody2D>();
-
-		// Get enemy sprite renderer component
 		enemySpriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
@@ -87,12 +83,6 @@ public class EnemyBasicAI : MonoBehaviour
 		}
 	}
 
-	protected virtual void ChaseTarget()
-	{
-		// Move towards the target
-		transform.position = Vector3.MoveTowards(transform.position, target.transform.position, movementSpeed * Time.deltaTime);
-	}
-
 	#region TakeDamage
 
 	public void TakeDamage(int damage)
@@ -106,13 +96,11 @@ public class EnemyBasicAI : MonoBehaviour
 			health -= damage;
 			StartCoroutine(DamageFlash());
 		}
-
-		//Game.game.Shake(0.15f, 0.15f, 30.0f);	// Call the screen shake effect
 	}
 
 	private IEnumerator DamageFlash()
 	{
-		// Flash sprite (set the sprite color to red for a small duration of time)
+		// Flash sprite
 		enemySpriteRenderer.color = Color.red;
 		yield return new WaitForSeconds(0.03f);
 		enemySpriteRenderer.color = Color.white;
@@ -134,6 +122,12 @@ public class EnemyBasicAI : MonoBehaviour
 	#endregion
 
 	#region Attack
+
+	protected virtual void ChaseTarget()
+	{
+		// Move towards the target
+		transform.position = Vector3.MoveTowards(transform.position, target.transform.position, movementSpeed * Time.deltaTime);
+	}
 
 	protected virtual void Attack()
 	{
@@ -169,7 +163,7 @@ public class EnemyBasicAI : MonoBehaviour
 
 		if (type != EnemyType.Mage)
 		{
-			projScript.rig.velocity = (target.transform.position - transform.position).normalized * projectileSpeed;
+			projScript.projectileRigidbody.velocity = (target.transform.position - transform.position).normalized * projectileSpeed;
 		}
 		else
 		{
