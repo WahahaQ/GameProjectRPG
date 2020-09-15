@@ -13,6 +13,24 @@ public class Game : MonoBehaviour
 	[System.NonSerialized]
 	public bool gameDone;
 
+	public List<Wave> waves = new List<Wave>();
+	public List<GameObject> curEnemies = new List<GameObject>();
+	public Transform[] spawnPoints;
+	
+	[Header("Enemy prefabs:")]
+	public GameObject knightPrefab;
+	public GameObject archerPrefab;
+	public GameObject magePrefab;
+	public GameObject kingPrefab;
+
+	[Header("Main components:")]
+	public UI userInterface;
+	public HealthSystem healthSystemUI;
+	public GameObject playerGameObject;
+	public TargetIndicator targetIndicator;
+	public HealthController playerHealthController;
+	public ShootingBehaviour playerShootingBehaviour;
+
 #pragma warning disable 0649
 
 	[SerializeField]
@@ -20,22 +38,6 @@ public class Game : MonoBehaviour
 
 #pragma warning restore 0649
 
-	public List<Wave> waves = new List<Wave>();
-	public List<GameObject> curEnemies = new List<GameObject>();
-	public Transform[] spawnPoints;
-
-	// Enemy prefabs
-	public GameObject knightPrefab;
-	public GameObject archerPrefab;
-	public GameObject magePrefab;
-	public GameObject kingPrefab;
-
-	public UI userInterface;
-	public HealthSystem healthSystemUI;
-	public GameObject playerGameObject;
-	public HealthController playerHealthController;
-	public ShootingBehaviour playerShootingBehaviour;
-	
 	private bool waveActive, canUpgrade;
 
 	private void Awake()
@@ -45,6 +47,7 @@ public class Game : MonoBehaviour
 
 	private void Start()
 	{
+		Screen.orientation = ScreenOrientation.Landscape;
 		StartCoroutine(StartGameTimer());
 	}
 
@@ -53,6 +56,18 @@ public class Game : MonoBehaviour
 		// If no enemies left - start the new wave
 		if (waveActive)
 		{
+			switch (curEnemies.Count)
+			{
+				case 0:
+					waveActive = false;
+					StartCoroutine(WaveEndTimer());
+					targetIndicator.SetActiveTarget(null);
+					break;
+				case 1:
+					targetIndicator.SetActiveTarget(curEnemies[0].transform);
+					break;
+			}
+
 			if (curEnemies.Count == 0)
 			{
 				waveActive = false;
@@ -191,11 +206,11 @@ public class Game : MonoBehaviour
 
 		switch (enemyType)
 		{
-			case EnemyBasicAI.EnemyType.Knight:
+			case EnemyBasicAI.EnemyType.Slime:
 				return knightPrefab;
 			case EnemyBasicAI.EnemyType.Archer:
 				return archerPrefab;
-			case EnemyBasicAI.EnemyType.Mage:
+			case EnemyBasicAI.EnemyType.Skeleton:
 				return magePrefab;
 			default:
 				return null;

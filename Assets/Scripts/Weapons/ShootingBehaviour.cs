@@ -61,7 +61,7 @@ public class ShootingBehaviour : MonoBehaviour
 		GameObject muzzleFlash = Instantiate(muzzleFlashPrefab, transform.position, transform.rotation);
 		Destroy(muzzleFlash, .05f);
 
-		GameObject projectile = Instantiate(bulletPrefab, transform.position + (transform.up * 0.7f), transform.rotation);
+		GameObject projectile = Instantiate(bulletPrefab, transform.position + (transform.up * 0.4f), transform.rotation.normalized);
 		Projectile projectileScript = projectile.GetComponent<Projectile>();
 
 		// Set projectile's damage and shoot it forward

@@ -8,13 +8,13 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField]
 	private float movementSpeed = 5f;
 
-	private SpriteRenderer spriteRenderer;
-	private Rigidbody2D playerRigidbody;
-
 #pragma warning restore 0649
 
 	[System.NonSerialized]
 	public Directions playerFacing;
+
+	private SpriteRenderer spriteRenderer;
+	private Rigidbody2D playerRigidbody;
 
 	private Animator animatorComponent;
 	private Vector2 movementVector;
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 		// Input
 		movementVector.x = Input.GetAxisRaw(GameConstants.AXIS_HORIZONTAL);
 		movementVector.y = Input.GetAxisRaw(GameConstants.AXIS_VERTICAL);
-
+		
 		// Set direction before normalization
 		UpdatePlayerDirection(movementVector);
 		movementVector = movementVector.normalized;
@@ -75,7 +75,10 @@ public class PlayerMovement : MonoBehaviour
 			  ○ If (x=1; y=1)	- North East	|	↗
 		*/
 
-		animatorComponent.SetBool("IsRunning", true);
+		if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsRunning"))
+		{
+			animatorComponent.SetBool("IsRunning", true);
+		}
 
 		switch (movementVector.x)
 		{
@@ -90,7 +93,10 @@ public class PlayerMovement : MonoBehaviour
 			case 0:
 				if (movementVector.y == 0)
 				{
-					animatorComponent.SetBool("IsRunning", false);
+					if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsRunning"))
+					{
+						animatorComponent.SetBool("IsRunning", false);
+					}
 				}
 
 				playerFacing = movementVector.y > 0 ? Directions.NORTH : playerFacing = Directions.SOUTH;

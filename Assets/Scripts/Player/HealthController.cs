@@ -24,7 +24,12 @@ public class HealthController : MonoBehaviour
 		else
 		{
 			currentHealth -= damage;
-			animatorComponent.SetTrigger("OnTakeHitTrigger");
+
+			if (GameUtilities.CheckAnimatorParameter(animatorComponent, "OnTakeHitTrigger"))
+			{
+				animatorComponent.SetTrigger("OnTakeHitTrigger");
+			}
+
 			StartCoroutine(WaitForAnimation());
 		}
 	}

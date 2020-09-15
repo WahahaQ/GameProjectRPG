@@ -18,6 +18,8 @@ public class EnemyBasicAI : MonoBehaviour
 	[SerializeField]
 	protected GameObject deathParticleEffect;
 
+	[SerializeField]
+	protected Transform ejectionPort;
 
 #pragma warning restore 0649
 
@@ -28,16 +30,16 @@ public class EnemyBasicAI : MonoBehaviour
 	protected bool isDeathAnimationPlaying = false;
 
 	public GameObject target;
-	public EnemyType type;
+	public EnemyType enemyType;
 	public enum EnemyType
 	{
-		Knight,
+		Slime,
 		Archer,
-		Mage
+		Skeleton
 	}
 
 	protected float attackTimer;
-	
+
 	private void Start()
 	{
 		// Get all of the components
@@ -50,17 +52,36 @@ public class EnemyBasicAI : MonoBehaviour
 	{
 		attackTimer += Time.deltaTime;
 
+		// Flip enemy to the player position
+		if (enemyType != EnemyType.Slime)
+		{
+			bool playerIsToTheRight = Vector2.Dot(
+				Game.game.playerGameObject.transform.position - transform.position,
+				transform.right) > 0;
+			enemySpriteRenderer.flipX = !playerIsToTheRight;
+		}
+
 		if (target != null)
 		{
 			// Chase the player if he's too far away
 			if (Vector3.Distance(transform.position, target.transform.position) > attackRange && !isDeathAnimationPlaying)
 			{
 				ChaseTarget();
+
+				if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsRunning"))
+				{
+					animatorComponent.SetBool("IsRunning", true);
+				}
 			}
 
 			// Otherwise attack
 			else
 			{
+				if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsRunning"))
+				{
+					animatorComponent.SetBool("IsRunning", false);
+				}
+
 				if (attackTimer >= attackRate)
 				{
 					attackTimer = 0.0f;
@@ -86,7 +107,7 @@ public class EnemyBasicAI : MonoBehaviour
 	#region TakeDamage
 
 	public void TakeDamage(int damage)
-	{ 
+	{
 		if (health - damage <= 0)
 		{
 			Die();
@@ -110,7 +131,19 @@ public class EnemyBasicAI : MonoBehaviour
 	{
 		isDeathAnimationPlaying = true;
 		enemyRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
-		animatorComponent.SetBool("IsGoingToDie", true);
+
+		if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsGoingToDie"))
+		{
+			animatorComponent.SetBool("IsGoingToDie", true);
+		}
+	}
+
+	protected void DestroyChildrens()
+	{
+		foreach (Transform child in transform)
+		{
+			Destroy(child.gameObject);
+		}
 	}
 
 	protected void DestroyGameObject()
@@ -141,13 +174,13 @@ public class EnemyBasicAI : MonoBehaviour
 			Otherwise - hit the target with the melee attack.
 		*/
 
-		switch (type)
+		switch (enemyType)
 		{
 			case EnemyType.Archer:
-			case EnemyType.Mage:
+			case EnemyType.Skeleton:
 				Shoot();
 				break;
-			case EnemyType.Knight:
+			case EnemyType.Slime:
 				Melee();
 				break;
 		}
@@ -155,13 +188,13 @@ public class EnemyBasicAI : MonoBehaviour
 
 	protected virtual void Shoot()
 	{
-		GameObject proj = Instantiate(projectilePrefab, transform.position + (transform.up * 0.7f), transform.rotation);
+		GameObject proj = Instantiate(projectilePrefab, ejectionPort.position, transform.rotation);
 		Projectile projScript = proj.GetComponent<Projectile>();
-		
+
 		// Set projectile's damage and shoot it forward
 		projScript.damage = damage;
 
-		if (type != EnemyType.Mage)
+		if (enemyType != EnemyType.Skeleton)
 		{
 			projScript.projectileRigidbody.velocity = (target.transform.position - transform.position).normalized * projectileSpeed;
 		}
