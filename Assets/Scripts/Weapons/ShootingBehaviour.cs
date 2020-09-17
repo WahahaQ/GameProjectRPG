@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ShootingBehaviour : MonoBehaviour
 {
@@ -27,6 +28,11 @@ public class ShootingBehaviour : MonoBehaviour
 
 	private void Update()
 	{
+		if (Game.game.pauseMenu.isActive)
+		{
+			return;
+		}
+
 		attackTimer += Time.deltaTime;
 
 		Inputs();
@@ -37,8 +43,13 @@ public class ShootingBehaviour : MonoBehaviour
 		// Get mouse coordinates, relative to the point from screen space
 		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		mousePosition = new Vector3(mousePosition.x, mousePosition.y, .0f);
-				
-		if (Input.GetMouseButtonDown(0))
+
+		// Look at Mouse / Joystick
+		Vector3 dir = transform.position - mousePosition;
+		float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90;
+		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+		if (Input.GetMouseButtonDown(0) && (ejectionPort.position - mousePosition).magnitude > (ejectionPort.position - transform.position).magnitude)
 		{
 			// Shoot
 			if (attackTimer >= attackRate)
@@ -46,13 +57,8 @@ public class ShootingBehaviour : MonoBehaviour
 				attackTimer = 0.0f;
 				Shoot();
 				DropBulletCase();
-			}			
+			}
 		}
-
-		// Look at Mouse / Joystick
-		Vector3 dir = transform.position - mousePosition;
-		float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90;
-		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 	}
 
 	private void Shoot()
@@ -61,12 +67,19 @@ public class ShootingBehaviour : MonoBehaviour
 		GameObject muzzleFlash = Instantiate(muzzleFlashPrefab, transform.position, transform.rotation);
 		Destroy(muzzleFlash, .05f);
 
-		GameObject projectile = Instantiate(bulletPrefab, transform.position + (transform.up * 0.4f), transform.rotation.normalized);
+		Vector3 currentMousePosition = mousePosition;
+
+		GameObject projectile = Instantiate(bulletPrefab, transform.position, transform.rotation.normalized);
 		Projectile projectileScript = projectile.GetComponent<Projectile>();
 
 		// Set projectile's damage and shoot it forward
 		projectileScript.damage = damage;
 		projectileScript.projectileRigidbody.velocity = (mousePosition - transform.position).normalized * bulletSpeed;
+		
+		// Look at Mouse / Joystick
+		Vector3 dir = transform.position - mousePosition;
+		float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90;
+		projectileScript.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 	}
 
 	private void DropBulletCase()

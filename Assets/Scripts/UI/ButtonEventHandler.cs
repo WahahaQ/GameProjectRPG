@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +11,11 @@ public class ButtonEventHandler : MonoBehaviour
 		StartCoroutine(LoadScene("Game", 0.3f));
 	}
 
+	public void ResumeOnClick()
+	{
+		Game.game.pauseMenu.SwitchPauseState();
+	}
+
 	public void MenuButtonOnClick()
 	{
 		StartCoroutine(LoadScene("MainMenu", 0.3f));
@@ -19,7 +23,7 @@ public class ButtonEventHandler : MonoBehaviour
 
 	public void QuitButtonOnClick()
 	{
-		QuitApplication();
+		QuitApplication(0.3f);
 	}
 
 	#endregion
@@ -33,12 +37,13 @@ public class ButtonEventHandler : MonoBehaviour
 
 	public IEnumerator LoadScene(string sceneName, float delay)
 	{
-		yield return new WaitForSeconds(delay);
+		yield return new WaitForSecondsRealtime(delay);
 		SceneManager.LoadScene(sceneName);
 	}
 
-	private void QuitApplication()
+	public IEnumerator QuitApplication(float delay = 0f)
 	{
+		yield return new WaitForSecondsRealtime(delay);
 #if UNITY_EDITOR
 		UnityEditor.EditorApplication.isPlaying = false;
 #else

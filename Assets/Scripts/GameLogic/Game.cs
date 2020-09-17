@@ -25,6 +25,7 @@ public class Game : MonoBehaviour
 
 	[Header("Main components:")]
 	public UI userInterface;
+	public PauseMenu pauseMenu;
 	public HealthSystem healthSystemUI;
 	public GameObject playerGameObject;
 	public TargetIndicator targetIndicator;

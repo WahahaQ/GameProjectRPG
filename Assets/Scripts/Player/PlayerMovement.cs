@@ -42,6 +42,11 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Update()
 	{
+		if (Game.game.pauseMenu.isActive)
+		{
+			return;
+		}
+
 		// Input
 		movementVector.x = Input.GetAxisRaw(GameConstants.AXIS_HORIZONTAL);
 		movementVector.y = Input.GetAxisRaw(GameConstants.AXIS_VERTICAL);
