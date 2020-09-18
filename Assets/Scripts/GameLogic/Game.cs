@@ -29,6 +29,7 @@ public class Game : MonoBehaviour
 	public HealthSystem healthSystemUI;
 	public GameObject playerGameObject;
 	public TargetIndicator targetIndicator;
+	public CameraShake cameraShakeController;
 	public HealthController playerHealthController;
 	public ShootingBehaviour playerShootingBehaviour;
 
@@ -67,12 +68,6 @@ public class Game : MonoBehaviour
 				case 1:
 					targetIndicator.SetActiveTarget(curEnemies[0].transform);
 					break;
-			}
-
-			if (curEnemies.Count == 0)
-			{
-				waveActive = false;
-				StartCoroutine(WaveEndTimer());
 			}
 		}
 		
@@ -157,7 +152,7 @@ public class Game : MonoBehaviour
 			// Called for each enemy spawned
 			for (int x = 0; x < wave.enemies.Length; x++)
 			{
-				yield return new WaitForSeconds(wave.spawnRates[x]);
+				yield return new WaitForSeconds(wave.spawnRates[x + (int)Time.deltaTime]);
 
 				GameObject enemyToSpawn = GetEnemyFactoryMethod(wave.enemies[x]);
 				Vector3 randomOffset = new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), 0);
@@ -166,6 +161,8 @@ public class Game : MonoBehaviour
 				enemy.GetComponent<EnemyBasicAI>().target = playerGameObject;
 				curEnemies.Add(enemy);
 			}
+
+			waveActive = true;
 		}
 		// Otherwise spawn the boss
 		else
@@ -173,9 +170,9 @@ public class Game : MonoBehaviour
 			GameObject enemy = Instantiate(kingPrefab, spawnPoints[Random.Range(0, spawnPoints.Length)].position, Quaternion.identity);
 			enemy.GetComponent<FinalBoss>().target = playerGameObject;
 			curEnemies.Add(enemy);
-		}
 
-		waveActive = true;
+			waveActive = true;
+		}
 	}
 
 	private IEnumerator WaveEndTimer()
@@ -211,7 +208,7 @@ public class Game : MonoBehaviour
 				return knightPrefab;
 			case EnemyBasicAI.EnemyType.Archer:
 				return archerPrefab;
-			case EnemyBasicAI.EnemyType.Skeleton:
+			case EnemyBasicAI.EnemyType.Mage:
 				return magePrefab;
 			default:
 				return null;

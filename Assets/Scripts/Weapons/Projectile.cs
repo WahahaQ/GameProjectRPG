@@ -91,9 +91,9 @@ public class Projectile : MonoBehaviour
 						col.gameObject.GetComponent<EnemyBasicAI>().TakeDamage(damage);
 					}
 
+					Game.game.cameraShakeController.StartShake(.5f, .02f);
 					DestroyProjectile();
-
-					break;
+					return;
 				case "Projectile":
 
 					if (col.gameObject.GetComponent<Projectile>().hittable)
@@ -107,6 +107,8 @@ public class Projectile : MonoBehaviour
 					DestroyProjectile();
 					break;
 			}
+
+			Game.game.cameraShakeController.StartShake(.3f, .01f);
 		}
 		else
 		{

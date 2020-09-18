@@ -19,6 +19,7 @@ public class ButtonEventHandler : MonoBehaviour
 	public void MenuButtonOnClick()
 	{
 		StartCoroutine(LoadScene("MainMenu", 0.3f));
+		Time.timeScale = 1f;
 	}
 
 	public void QuitButtonOnClick()
@@ -44,6 +45,7 @@ public class ButtonEventHandler : MonoBehaviour
 	public IEnumerator QuitApplication(float delay = 0f)
 	{
 		yield return new WaitForSecondsRealtime(delay);
+
 #if UNITY_EDITOR
 		UnityEditor.EditorApplication.isPlaying = false;
 #else

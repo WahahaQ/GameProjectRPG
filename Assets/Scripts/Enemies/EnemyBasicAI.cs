@@ -35,7 +35,7 @@ public class EnemyBasicAI : MonoBehaviour
 	{
 		Slime,
 		Archer,
-		Skeleton
+		Mage
 	}
 
 	protected float attackTimer;
@@ -130,7 +130,7 @@ public class EnemyBasicAI : MonoBehaviour
 	public virtual void Die()
 	{
 		isDeathAnimationPlaying = true;
-		enemyRigidbody.constraints = RigidbodyConstraints2D.FreezePosition;
+		enemyRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
 
 		if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsGoingToDie"))
 		{
@@ -177,7 +177,7 @@ public class EnemyBasicAI : MonoBehaviour
 		switch (enemyType)
 		{
 			case EnemyType.Archer:
-			case EnemyType.Skeleton:
+			case EnemyType.Mage:
 				Shoot();
 				break;
 			case EnemyType.Slime:
@@ -194,13 +194,20 @@ public class EnemyBasicAI : MonoBehaviour
 		// Set projectile's damage and shoot it forward
 		projScript.damage = damage;
 
-		if (enemyType != EnemyType.Skeleton)
+		switch (enemyType)
 		{
-			projScript.projectileRigidbody.velocity = (target.transform.position - transform.position).normalized * projectileSpeed;
-		}
-		else
-		{
-			projScript.followSpeed = projectileSpeed;
+			case EnemyType.Mage:
+				projScript.followSpeed = projectileSpeed;
+				break;
+			default:
+				// Set projectile rotation
+				Vector3 dir = transform.position - target.transform.position;
+				float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + 90;
+				projScript.projectileRigidbody.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+				projScript.projectileRigidbody.velocity = (target.transform.position - transform.position).normalized * projectileSpeed;
+				
+				break;
 		}
 	}
 
