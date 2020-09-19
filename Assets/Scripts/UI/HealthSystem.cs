@@ -8,16 +8,24 @@ public class HealthSystem : MonoBehaviour
 	[SerializeField]
 	private Image[] hearts;
 
+	[Header("Heart sprites variants:")]
 	[SerializeField]
-	private Sprite heartFull, heartEmpty;
+	private Sprite heartFull;
+
+	[SerializeField]
+	private Sprite heartEmpty;
+
+	[Space]
+	[SerializeField]
+	private int numberOfHearts;
 
 #pragma warning restore 0649
 
-	public int numberOfHearts;
 	private int playerHealth;
 
 	public void DecreaseHealth(int damage)
 	{
+		// Get the player's current health
 		playerHealth = Game.game.playerHealthController.currentHealth - damage;
 
 		for (int i = 0; i < hearts.Length; i++)

@@ -12,26 +12,9 @@ public class Game : MonoBehaviour
 
 	[System.NonSerialized]
 	public bool gameDone;
-
-	public List<Wave> waves = new List<Wave>();
-	public List<GameObject> curEnemies = new List<GameObject>();
-	public Transform[] spawnPoints;
 	
-	[Header("Enemy prefabs:")]
-	public GameObject knightPrefab;
-	public GameObject archerPrefab;
-	public GameObject magePrefab;
-	public GameObject kingPrefab;
-
 	[Header("Main components:")]
-	public UI userInterface;
-	public PauseMenu pauseMenu;
-	public HealthSystem healthSystemUI;
 	public GameObject playerGameObject;
-	public TargetIndicator targetIndicator;
-	public CameraShake cameraShakeController;
-	public HealthController playerHealthController;
-	public ShootingBehaviour playerShootingBehaviour;
 
 #pragma warning disable 0649
 
@@ -39,6 +22,29 @@ public class Game : MonoBehaviour
 	private Transform mainCamera;
 
 #pragma warning restore 0649
+
+	[Header("Enemy prefabs:")]
+	public GameObject knightPrefab;
+	public GameObject archerPrefab;
+	public GameObject magePrefab;
+	public GameObject kingPrefab;
+
+
+	[Space]
+	public List<Wave> waves = new List<Wave>();
+	public List<GameObject> curEnemies = new List<GameObject>();
+	public Transform[] spawnPoints;
+
+	[Header("Main components - UI:")]
+	public UI userInterface;
+	public PauseMenu pauseMenu;
+	public HealthSystem healthSystemUI;
+	public TargetIndicator targetIndicator;
+
+	[Header("Main components - Other:")]
+	public CameraShake cameraShakeController;
+	public HealthController playerHealthController;
+	public ShootingBehaviour playerShootingBehaviour;
 
 	private bool waveActive, canUpgrade;
 
@@ -74,65 +80,25 @@ public class Game : MonoBehaviour
 		if (canUpgrade)
 		{
 			// Let the player choose an upgrade
-			if (Input.GetKeyDown(KeyCode.Q))
-			{
-				playerShootingBehaviour.damage += 5;
-				canUpgrade = false;
-				userInterface.upgradeText.gameObject.SetActive(false);
-			}
-
-			if (Input.GetKeyDown(KeyCode.E))
-			{
-				playerShootingBehaviour.attackRate = 0.05f;
-				canUpgrade = false;
-				userInterface.upgradeText.gameObject.SetActive(false);
-			}
-		}
-
-		// Quit the game on Escape button
-		if (Input.GetKeyDown(KeyCode.Escape))
-		{
-			Application.Quit();
+			ChooseUpdate();
 		}
 	}
 	
-	private IEnumerator StartGameTimer()
+	private void ChooseUpdate()
 	{
-		// Count down at the start of the game
-		userInterface.startText.gameObject.SetActive(true);
-		yield return new WaitForSeconds(1);
-		
-		userInterface.startText.text = "BEGINS IN\n<size=90>4</size>"; 
-		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
-		yield return new WaitForSeconds(1);
-		
-		userInterface.startText.text = "BEGINS IN\n<size=100>3</size>"; 
-		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
-		yield return new WaitForSeconds(1);
-		
-		userInterface.startText.text = "BEGINS IN\n<size=110>2</size>"; 
-		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
-		yield return new WaitForSeconds(1);
-		
-		userInterface.startText.text = "BEGINS IN\n<size=120>1</size>"; 
-		userInterface.startText.rectTransform.localScale += new Vector3(0.03f, 0.03f, 0);
-		
-		yield return new WaitForSeconds(1);
-		userInterface.startText.gameObject.SetActive(false);
-		Camera.main.orthographicSize = 7;
+		if (Input.GetKeyDown(KeyCode.Q))
+		{
+			playerShootingBehaviour.damage += 5;
+			canUpgrade = false;
+			userInterface.upgradeText.gameObject.SetActive(false);
+		}
 
-		NextWave();
-	}
-
-	public void EndGame()
-	{ 
-		StartCoroutine(EndGameTimer());
-	}
-
-	public void WinGame()
-	{
-		gameDone = true;
-		StartCoroutine(WinGameTimer());
+		if (Input.GetKeyDown(KeyCode.E))
+		{
+			playerShootingBehaviour.attackRate = 0.05f;
+			canUpgrade = false;
+			userInterface.upgradeText.gameObject.SetActive(false);
+		}
 	}
 
 	private void NextWave()
@@ -143,6 +109,47 @@ public class Game : MonoBehaviour
 		Wave wave = waves[waveCount - 1];
 		StartCoroutine(EnemySpawnLoop(wave));
 		userInterface.StartCoroutine("NextWaveAnim");
+	}
+
+	public void WinGame()
+	{
+		gameDone = true;
+		StartCoroutine(WinGameTimer());
+	}
+
+	public void EndGame()
+	{
+		StartCoroutine(EndGameTimer());
+	}
+
+	#region Coroutines
+
+	private IEnumerator StartGameTimer()
+	{
+		// Count down at the start of the game
+		userInterface.startText.gameObject.SetActive(true);
+		yield return new WaitForSeconds(1);
+
+		userInterface.startText.text = "BEGINS IN\n<size=90>4</size>";
+		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
+		yield return new WaitForSeconds(1);
+
+		userInterface.startText.text = "BEGINS IN\n<size=100>3</size>";
+		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
+		yield return new WaitForSeconds(1);
+
+		userInterface.startText.text = "BEGINS IN\n<size=110>2</size>";
+		userInterface.startText.rectTransform.localScale += new Vector3(0.05f, 0.05f, 0);
+		yield return new WaitForSeconds(1);
+
+		userInterface.startText.text = "BEGINS IN\n<size=120>1</size>";
+		userInterface.startText.rectTransform.localScale += new Vector3(0.03f, 0.03f, 0);
+
+		yield return new WaitForSeconds(1);
+		userInterface.startText.gameObject.SetActive(false);
+		Camera.main.orthographicSize = 7;
+
+		NextWave();
 	}
 
 	private IEnumerator EnemySpawnLoop(Wave wave)
@@ -197,7 +204,22 @@ public class Game : MonoBehaviour
 		}
 	}
 
-	
+	private IEnumerator EndGameTimer()
+	{
+		// Show the end game screen
+		yield return new WaitForSeconds(2);
+		userInterface.endGameScreen.SetActive(true);
+	}
+
+	private IEnumerator WinGameTimer()
+	{
+		gameDone = true;
+		yield return new WaitForSeconds(2);
+		userInterface.winScreen.SetActive(true);
+	}
+
+	#endregion
+
 	private GameObject GetEnemyFactoryMethod(EnemyBasicAI.EnemyType enemyType)
 	{
 		// Returns an enemy prefab based on the EnemyType
@@ -213,19 +235,5 @@ public class Game : MonoBehaviour
 			default:
 				return null;
 		}
-	}
-
-	private IEnumerator EndGameTimer()
-	{
-		// Show the end game screen
-		yield return new WaitForSeconds(2);
-		userInterface.endGameScreen.SetActive(true);
-	}
-
-	private IEnumerator WinGameTimer()
-	{
-		gameDone = true;
-		yield return new WaitForSeconds(2);
-		userInterface.winScreen.SetActive(true);
 	}
 }

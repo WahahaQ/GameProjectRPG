@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Transform))]
+[RequireComponent(typeof(Camera))]
 public class CameraFollow : MonoBehaviour
 {
 #pragma warning disable 0649
 
 	[SerializeField]
+	[Tooltip("An object that will be followed by the camera.")]
 	private GameObject objectToFollow;
 
 #pragma warning restore 0649
@@ -20,7 +21,8 @@ public class CameraFollow : MonoBehaviour
 
 	private void LateUpdate()
 	{
-		// Change camera position
-		transform.position = objectToFollow.transform.position + offset;
+		// Call the camera shake method before changing its position
+		Game.game.cameraShakeController.ShakeCamera();
+		transform.position = objectToFollow.transform.position + offset;	// Change position of the GameObject
 	}
 }

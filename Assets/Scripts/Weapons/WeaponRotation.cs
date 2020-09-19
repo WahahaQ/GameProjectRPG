@@ -4,6 +4,7 @@ public class WeaponRotation : MonoBehaviour
 {
 #pragma warning disable 0649
 
+	[Space]
 	[SerializeField]
 	private OwnerType ownerType;
 

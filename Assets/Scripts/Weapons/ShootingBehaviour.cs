@@ -1,13 +1,21 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
 
 public class ShootingBehaviour : MonoBehaviour
 {
+	[Header("Properties:")]
+	public int damage;
+	public float attackRate;
+	public float bulletSpeed;
+
 #pragma warning disable 0649
 
+	[Header("Components:")]
+
 	[SerializeField]
-	private GameObject bulletPrefab, muzzleFlashPrefab;
+	private GameObject bulletPrefab;
+
+	[SerializeField]
+	private GameObject muzzleFlashPrefab;
 
 	[SerializeField]
 	private GameObject bulletCase;
@@ -20,22 +28,17 @@ public class ShootingBehaviour : MonoBehaviour
 
 #pragma warning restore 0649
 
-	public int damage;
-	public float attackRate, bulletSpeed;
-
 	private Vector3 mousePosition;
 	private float attackTimer;
 
 	private void Update()
 	{
-		if (Game.game.pauseMenu.isActive)
+		if (!Game.game.pauseMenu.isActive)
 		{
-			return;
+			attackTimer += Time.deltaTime;
+
+			Inputs();
 		}
-
-		attackTimer += Time.deltaTime;
-
-		Inputs();
 	}
 
 	private void Inputs()

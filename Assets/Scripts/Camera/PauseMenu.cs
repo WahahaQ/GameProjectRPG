@@ -1,17 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
 #pragma warning disable 0649
 
 	[SerializeField]
+	[Tooltip("GameObject that represents the pause menu.")]
 	private GameObject pauseMenuCanvas;
 
 #pragma warning restore 0649
 
-	public bool isActive = false;
+	public bool isActive = false;	// The current state of the pause menu
 
 	private void Start()
 	{
@@ -28,6 +27,7 @@ public class PauseMenu : MonoBehaviour
 
 	public void SwitchPauseState()
 	{
+		// Change the current state to the opposite
 		isActive = !isActive;
 		pauseMenuCanvas.SetActive(isActive);
 		Time.timeScale = isActive ? 0f : 1f;

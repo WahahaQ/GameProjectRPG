@@ -1,28 +1,26 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Camera))]
 public class CameraShake : MonoBehaviour
 {
-#pragma warning disable 0649
-
-	[SerializeField]
 	private Transform cameraTransform;
-
-#pragma warning restore 0649
-
-	private float shakeTimeRemaining;
-	private float shakePower;
-	private float shakeFadeTime;
-	private float shakeRotation;
-	public float rotationMultiplier = 50f;
-
 	private Vector3 cameraOrigin;
 
-	private void LateUpdate()
+	// Properties of the camera shake effect
+	private float shakeTimeRemaining, shakeFadeTime;
+	private float shakePower, shakeRotation;
+	public float rotationMultiplier = 50f;
+
+	public void Start()
+	{
+		InitializeCameraInstance();
+	}
+
+	public void ShakeCamera()
 	{
 		if (cameraTransform == null)
 		{
-			cameraTransform = cameraTransform == null ? Camera.main.transform : cameraTransform;
-			cameraOrigin = cameraTransform.transform.position;
+			InitializeCameraInstance();
 		}
 
 		if (shakeTimeRemaining > 0)
@@ -36,6 +34,7 @@ public class CameraShake : MonoBehaviour
 			shakeRotation = Mathf.MoveTowards(shakeRotation, 0f, shakeFadeTime * rotationMultiplier * Time.deltaTime);
 		}
 
+		// Shake camera via changing its rotation
 		cameraTransform.rotation = Quaternion.Euler(0f, 0f, shakeRotation * Random.Range(-1f, 1f));
 		cameraTransform.transform.position = cameraOrigin;
 	}
@@ -46,5 +45,11 @@ public class CameraShake : MonoBehaviour
 		shakePower = power;
 		shakeFadeTime = power / lenght;
 		shakeRotation = power * rotationMultiplier;
+	}
+
+	private void InitializeCameraInstance()
+	{
+		cameraTransform = GetComponent<Camera>().transform;
+		cameraOrigin = cameraTransform.transform.position;
 	}
 }

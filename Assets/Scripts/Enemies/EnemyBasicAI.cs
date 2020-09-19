@@ -4,13 +4,26 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
 public class EnemyBasicAI : MonoBehaviour
 {
+	public enum EnemyType
+	{
+		Slime,
+		Archer,
+		Mage
+	}
+
+	[Header("Properties:")]
 	public int health;
 	public int damage;
 	public float movementSpeed;
 	public float attackRate, attackRange;
 	public float projectileSpeed;
 
+	[Space]
+	public EnemyType enemyType;
+
 #pragma warning disable 0649
+
+	[Header("Components:")]
 
 	[SerializeField]
 	protected GameObject projectilePrefab;
@@ -23,22 +36,14 @@ public class EnemyBasicAI : MonoBehaviour
 
 #pragma warning restore 0649
 
+	public GameObject target;
+
 	protected Animator animatorComponent;
 	protected Rigidbody2D enemyRigidbody;
 	protected SpriteRenderer enemySpriteRenderer;
 
-	protected bool isDeathAnimationPlaying = false;
-
-	public GameObject target;
-	public EnemyType enemyType;
-	public enum EnemyType
-	{
-		Slime,
-		Archer,
-		Mage
-	}
-
 	protected float attackTimer;
+	protected bool isDeathAnimationPlaying = false;
 
 	private void Start()
 	{
@@ -55,39 +60,12 @@ public class EnemyBasicAI : MonoBehaviour
 		// Flip enemy to the player position
 		if (enemyType != EnemyType.Slime)
 		{
-			bool playerIsToTheRight = Vector2.Dot(
-				Game.game.playerGameObject.transform.position - transform.position,
-				transform.right) > 0;
-			enemySpriteRenderer.flipX = !playerIsToTheRight;
+			FlipSprite();
 		}
 
 		if (target != null)
 		{
-			// Chase the player if he's too far away
-			if (Vector3.Distance(transform.position, target.transform.position) > attackRange && !isDeathAnimationPlaying)
-			{
-				ChaseTarget();
-
-				if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsRunning"))
-				{
-					animatorComponent.SetBool("IsRunning", true);
-				}
-			}
-
-			// Otherwise attack
-			else
-			{
-				if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsRunning"))
-				{
-					animatorComponent.SetBool("IsRunning", false);
-				}
-
-				if (attackTimer >= attackRate)
-				{
-					attackTimer = 0.0f;
-					Attack();
-				}
-			}
+			Act();
 		}
 		else
 		{
@@ -104,12 +82,42 @@ public class EnemyBasicAI : MonoBehaviour
 		}
 	}
 
+	private void Act()
+	{
+		// Chase the player if he's too far away
+		if (Vector3.Distance(transform.position, target.transform.position) > attackRange && !isDeathAnimationPlaying)
+		{
+			ChaseTarget();
+
+			if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsRunning"))
+			{
+				animatorComponent.SetBool("IsRunning", true);
+			}
+		}
+
+		// Otherwise attack
+		else
+		{
+			if (GameUtilities.CheckAnimatorParameter(animatorComponent, "IsRunning"))
+			{
+				animatorComponent.SetBool("IsRunning", false);
+			}
+
+			if (attackTimer >= attackRate)
+			{
+				attackTimer = 0.0f;
+				Attack();
+			}
+		}
+	}
+
 	#region TakeDamage
 
 	public void TakeDamage(int damage)
 	{
 		if (health - damage <= 0)
 		{
+			Game.game.cameraShakeController.StartShake(.5f, .07f);
 			Die();
 		}
 		else
@@ -121,7 +129,6 @@ public class EnemyBasicAI : MonoBehaviour
 
 	private IEnumerator DamageFlash()
 	{
-		// Flash sprite
 		enemySpriteRenderer.color = Color.red;
 		yield return new WaitForSeconds(0.03f);
 		enemySpriteRenderer.color = Color.white;
@@ -136,20 +143,6 @@ public class EnemyBasicAI : MonoBehaviour
 		{
 			animatorComponent.SetBool("IsGoingToDie", true);
 		}
-	}
-
-	protected void DestroyChildrens()
-	{
-		foreach (Transform child in transform)
-		{
-			Destroy(child.gameObject);
-		}
-	}
-
-	protected void DestroyGameObject()
-	{
-		Game.game.curEnemies.Remove(gameObject);
-		Destroy(gameObject);
 	}
 
 	#endregion
@@ -219,5 +212,28 @@ public class EnemyBasicAI : MonoBehaviour
 	}
 
 	#endregion
+
+	protected void DestroyChildrens()
+	{
+		foreach (Transform child in transform)
+		{
+			Destroy(child.gameObject);
+		}
+	}
+
+	protected void DestroyGameObject()
+	{
+		Game.game.curEnemies.Remove(gameObject);
+		Destroy(gameObject);
+	}
+
+	private void FlipSprite()
+	{
+		// Flip sprite to the player position
+		bool playerIsToTheRight = Vector2.Dot(
+			Game.game.playerGameObject.transform.position - transform.position,
+			transform.right) > 0;
+		enemySpriteRenderer.flipX = !playerIsToTheRight;
+	}
 }
 

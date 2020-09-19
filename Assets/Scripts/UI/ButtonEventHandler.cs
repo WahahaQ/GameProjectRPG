@@ -29,6 +29,7 @@ public class ButtonEventHandler : MonoBehaviour
 
 	#endregion
 
+	#region Coroutines
 
 	public IEnumerator LoadScene(string sceneName)
 	{
@@ -36,7 +37,7 @@ public class ButtonEventHandler : MonoBehaviour
 		yield break;
 	}
 
-	public IEnumerator LoadScene(string sceneName, float delay)
+	public IEnumerator LoadScene(string sceneName, float delay = 0f)
 	{
 		yield return new WaitForSecondsRealtime(delay);
 		SceneManager.LoadScene(sceneName);
@@ -52,4 +53,6 @@ public class ButtonEventHandler : MonoBehaviour
 		Application.Quit();
 #endif
 	}
+
+	#endregion
 }

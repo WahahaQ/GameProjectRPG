@@ -1,16 +1,25 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-	public Text startText, waveText, upgradeText;
-	public GameObject winScreen, endGameScreen;
+	[Header("UI elements:")]
+	public Text startText;
+	public Text waveText;
+	public Text upgradeText;
+
+	[Space]
+	public GameObject winScreen;
+	public GameObject endGameScreen;
 
 	private void Update()
 	{
-		//If the boss battle isn't active, then display the wave count.
+		DisplayCurrentStage();
+	}
+
+	private void DisplayCurrentStage()
+	{
 		if (Game.game.waveCount != 10)
 		{
 			waveText.text = "WAVE " + Game.game.waveCount;
@@ -20,21 +29,10 @@ public class UI : MonoBehaviour
 				waveText.text = "GET READY";
 			}
 		}
-		//Otherwise display boss battle text.
 		else
 		{
 			waveText.text = "BOSS BATTLE";
 		}
-	}
-
-	public void RestartButton()
-	{
-		SceneManager.LoadScene("Game");
-	}
-
-	public void QuitButton()
-	{
-		Application.Quit();
 	}
 
 	private IEnumerator NextWaveAnim()

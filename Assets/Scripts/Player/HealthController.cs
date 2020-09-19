@@ -4,15 +4,18 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class HealthController : MonoBehaviour
 {
-#pragma warning disable 0649
+	[Header("Health:")]
+	public int maxHealth;
+	public int currentHealth;
 
-	[SerializeField]
 	private Animator animatorComponent;
 
-#pragma warning restore 0649
+	private void Start()
+	{
+		// Get all of the components
+		animatorComponent = GetComponent<Animator>();
+	}
 
-	public int currentHealth, maxHealth;
-	
 	public void TakeDamage(int damage)
 	{
 		Game.game.healthSystemUI.DecreaseHealth(damage);
