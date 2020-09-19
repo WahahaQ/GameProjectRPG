@@ -46,8 +46,6 @@ public class HealthController : MonoBehaviour
 	{
 		currentHealth = 0;
 		animatorComponent.SetTrigger("OnDeathTrigger");
-		StartCoroutine(WaitForAnimation());
-
 		Game.game.EndGame();
 		gameObject.SetActive(false);
 	}

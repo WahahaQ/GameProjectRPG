@@ -207,6 +207,7 @@ public class EnemyBasicAI : MonoBehaviour
 	protected virtual void Melee()
 	{
 		// Damage the player, with a small knockback
+		SoundController.soundController.Play(GameConstants.PLAYER_HIT_SFX);
 		Game.game.playerHealthController.TakeDamage(damage);
 		enemyRigidbody.AddForce((target.transform.position - transform.position).normalized * -3 * Time.deltaTime);
 	}

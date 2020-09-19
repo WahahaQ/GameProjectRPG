@@ -68,10 +68,11 @@ public class Projectile : MonoBehaviour
 		//If it's the player's projectile then just check for the enemy tag.
 		if (playerOwned)
 		{
+			SoundController.soundController.Play(GameConstants.HIT_SFX);
+			
 			switch (col.gameObject.tag)
 			{
 				case "Enemy":
-
 					if (!col.gameObject.name.Contains("King"))
 					{
 						col.gameObject.GetComponent<EnemyBasicAI>().TakeDamage(damage);
@@ -101,6 +102,7 @@ public class Projectile : MonoBehaviour
 			// If a projectile hits the player
 			if (col.gameObject.CompareTag("PlayerHitbox") || col.gameObject.CompareTag("Player"))
 			{
+				SoundController.soundController.Play(GameConstants.PLAYER_HIT_SFX);
 				Game.game.playerHealthController.TakeDamage(damage);
 				Destroy(gameObject);
 			}

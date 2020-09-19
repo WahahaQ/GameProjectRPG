@@ -9,10 +9,6 @@ public class UI : MonoBehaviour
 	public Text waveText;
 	public Text upgradeText;
 
-	[Space]
-	public GameObject winScreen;
-	public GameObject endGameScreen;
-
 	private void Update()
 	{
 		DisplayCurrentStage();

@@ -54,6 +54,7 @@ public class Game : MonoBehaviour
 
 	private void Start()
 	{
+		SoundController.soundController.Play(GameConstants.MAIN_THEME_2, false);
 		Screen.orientation = ScreenOrientation.Landscape;
 		StartCoroutine(StartGameTimer());
 	}
@@ -173,6 +174,7 @@ public class Game : MonoBehaviour
 		// Otherwise spawn the boss
 		else
 		{
+			SoundController.soundController.Play(GameConstants.BOSS_BATTLE, false);
 			GameObject enemy = Instantiate(kingPrefab, spawnPoints[Random.Range(0, spawnPoints.Length)].position, Quaternion.identity);
 			enemy.GetComponent<FinalBoss>().target = playerGameObject;
 			curEnemies.Add(enemy);
@@ -207,6 +209,7 @@ public class Game : MonoBehaviour
 	{
 		Cursor.visible = true;
 		yield return new WaitForSeconds(.4f);
+		SoundController.soundController.Play(GameConstants.LOSS_SFX, false);
 		overlayController.SwitchMenuState(GameConstants.LOSS_MENU_NAME);
 	}
 
@@ -215,6 +218,7 @@ public class Game : MonoBehaviour
 		gameDone = true;
 		Cursor.visible = true;
 		yield return new WaitForSeconds(.4f);
+		SoundController.soundController.Play(GameConstants.WIN_SFX, false);
 		overlayController.SwitchMenuState(GameConstants.WIN_MENU_NAME);
 	}
 
