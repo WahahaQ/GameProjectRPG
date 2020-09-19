@@ -60,6 +60,7 @@ public class SoundController : MonoBehaviour
 
 		AudioSource audioSource = soundEntity.audioSource;
 		audioSource.volume = soundEntity.volume;
+		audioSource.loop = !isSoundEffect;
 		audioSource.Play();
 	}
 }

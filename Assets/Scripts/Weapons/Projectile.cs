@@ -77,6 +77,10 @@ public class Projectile : MonoBehaviour
 					{
 						col.gameObject.GetComponent<EnemyBasicAI>().TakeDamage(damage);
 					}
+					else
+					{
+						col.gameObject.GetComponent<FinalBoss>().TakeDamage(damage);
+					}
 
 					Game.game.cameraShakeController.StartShake(.5f, .02f);
 					DestroyProjectile();
