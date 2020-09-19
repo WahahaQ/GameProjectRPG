@@ -11,11 +11,13 @@ public class CustomPointer : MonoBehaviour
 
 	private void Update()
 	{
-		Cursor.visible = Game.game.pauseMenu.isActive;
-
-		if (!Game.game.pauseMenu.isActive)
+		if (!Game.game.overlayController.IsActive())
 		{
 			DisplayCustomPointer();
+		}
+		else
+		{
+			Cursor.visible = true;
 		}
 	}
 

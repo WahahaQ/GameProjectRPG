@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class ButtonEventHandler : MonoBehaviour
 {
@@ -8,50 +6,29 @@ public class ButtonEventHandler : MonoBehaviour
 
 	public void PlayButtonOnClick()
 	{
-		StartCoroutine(LoadScene("Game", 0.3f));
+		StartCoroutine(GameUtilities.LoadScene(GameConstants.GAME_SCENE_NAME, .3f));
 	}
 
 	public void ResumeOnClick()
 	{
-		Game.game.pauseMenu.SwitchPauseState();
+		Game.game.overlayController.SwitchMenuState(GameConstants.PAUSE_MENU_NAME);
+	}
+
+	public void RestartButtonOnClick()
+	{
+		StartCoroutine(GameUtilities.LoadScene(GameConstants.LOADING_SCENE_NAME, .3f));
+		Time.timeScale = 1f;
 	}
 
 	public void MenuButtonOnClick()
 	{
-		StartCoroutine(LoadScene("MainMenu", 0.3f));
+		StartCoroutine(GameUtilities.LoadScene(GameConstants.MAIN_MENU_SCENE_NAME, .3f));
 		Time.timeScale = 1f;
 	}
 
 	public void QuitButtonOnClick()
 	{
-		QuitApplication(0.3f);
-	}
-
-	#endregion
-
-	#region Coroutines
-
-	public IEnumerator LoadScene(string sceneName)
-	{
-		SceneManager.LoadScene(sceneName);
-		yield break;
-	}
-
-	public IEnumerator LoadScene(string sceneName, float delay = 0f)
-	{
-		yield return new WaitForSecondsRealtime(delay);
-		SceneManager.LoadScene(sceneName);
-	}
-
-	public IEnumerator QuitApplication(float delay = 0f)
-	{
-		yield return new WaitForSecondsRealtime(delay);
-
-#if UNITY_EDITOR
-		UnityEditor.EditorApplication.isPlaying = false;
-#else
-		Application.Quit();
-#endif
+		GameUtilities.QuitApplication(0.3f);
 	}
 
 	#endregion

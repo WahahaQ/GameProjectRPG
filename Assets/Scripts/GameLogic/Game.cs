@@ -28,8 +28,7 @@ public class Game : MonoBehaviour
 	public GameObject archerPrefab;
 	public GameObject magePrefab;
 	public GameObject kingPrefab;
-
-
+	
 	[Space]
 	public List<Wave> waves = new List<Wave>();
 	public List<GameObject> curEnemies = new List<GameObject>();
@@ -37,9 +36,9 @@ public class Game : MonoBehaviour
 
 	[Header("Main components - UI:")]
 	public UI userInterface;
-	public PauseMenu pauseMenu;
 	public HealthSystem healthSystemUI;
 	public TargetIndicator targetIndicator;
+	public OverlayController overlayController;
 
 	[Header("Main components - Other:")]
 	public CameraShake cameraShakeController;
@@ -186,7 +185,7 @@ public class Game : MonoBehaviour
 	{
 		if (!gameDone)
 		{
-			yield return new WaitForSeconds(2);
+			yield return new WaitForSeconds(.4f);
 
 			// Let the player to choose an upgrade
 			if (waveCount == 4)
@@ -206,16 +205,17 @@ public class Game : MonoBehaviour
 
 	private IEnumerator EndGameTimer()
 	{
-		// Show the end game screen
-		yield return new WaitForSeconds(2);
-		userInterface.endGameScreen.SetActive(true);
+		Cursor.visible = true;
+		yield return new WaitForSeconds(.4f);
+		overlayController.SwitchMenuState(GameConstants.LOSS_MENU_NAME);
 	}
 
 	private IEnumerator WinGameTimer()
 	{
 		gameDone = true;
-		yield return new WaitForSeconds(2);
-		userInterface.winScreen.SetActive(true);
+		Cursor.visible = true;
+		yield return new WaitForSeconds(.4f);
+		overlayController.SwitchMenuState(GameConstants.WIN_MENU_NAME);
 	}
 
 	#endregion

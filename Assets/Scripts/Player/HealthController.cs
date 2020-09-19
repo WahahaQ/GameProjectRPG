@@ -45,12 +45,10 @@ public class HealthController : MonoBehaviour
 	private void Die()
 	{
 		currentHealth = 0;
-		Game.game.userInterface.StartCoroutine("HealthDown", currentHealth);
-
 		animatorComponent.SetTrigger("OnDeathTrigger");
 		StartCoroutine(WaitForAnimation());
 
 		Game.game.EndGame();
-		Destroy(gameObject);
+		gameObject.SetActive(false);
 	}
 }

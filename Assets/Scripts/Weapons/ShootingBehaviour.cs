@@ -33,7 +33,7 @@ public class ShootingBehaviour : MonoBehaviour
 
 	private void Update()
 	{
-		if (!Game.game.pauseMenu.isActive)
+		if (!Game.game.overlayController.IsActive())
 		{
 			attackTimer += Time.deltaTime;
 

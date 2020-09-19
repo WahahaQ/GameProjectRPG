@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Update()
 	{
-		if (!Game.game.pauseMenu.isActive)
+		if (!Game.game.overlayController.IsActive())
 		{
 			// Input
 			movementVector.x = Input.GetAxisRaw(GameConstants.AXIS_HORIZONTAL);
