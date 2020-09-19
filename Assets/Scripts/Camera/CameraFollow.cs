@@ -6,7 +6,6 @@ public class CameraFollow : MonoBehaviour
 #pragma warning disable 0649
 
 	[SerializeField]
-	[Tooltip("An object that will be followed by the camera.")]
 	private GameObject objectToFollow;
 
 #pragma warning restore 0649

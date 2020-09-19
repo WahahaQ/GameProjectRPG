@@ -5,7 +5,6 @@ public class PauseMenu : MonoBehaviour
 #pragma warning disable 0649
 
 	[SerializeField]
-	[Tooltip("GameObject that represents the pause menu.")]
 	private GameObject pauseMenuCanvas;
 
 #pragma warning restore 0649
